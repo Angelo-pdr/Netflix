@@ -56,3 +56,12 @@ export const Form = styled.form`
         background: #f40612;
     }
 `
+
+export const Grantiend = styled.div`
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        
+    )
+`
