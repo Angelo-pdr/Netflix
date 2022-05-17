@@ -1,10 +1,10 @@
-
+import * as C from './styles'
 
 
 export const Home = () => {
     return(
-        <div>
-            <p>Ola</p>
-        </div>
+        <C.Container>
+            
+        </C.Container>
     )
 }
