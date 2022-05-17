@@ -51,4 +51,8 @@ export const Form = styled.form`
         font-size: 1.6rem;
         cursor: pointer;
     }
+
+    button:hover{
+        background: #f40612;
+    }
 `
