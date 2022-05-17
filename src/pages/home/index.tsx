@@ -1,12 +1,13 @@
-import * as C from './styles'
-import back from "../../img/background.jpg"
+import "./styles.css"
 
 export const Home = () => {
-
+    
     return(
-        <C.Container>
-            <img src="../../img/background.jpg" alt="" />
-        </C.Container>
+        <div className="container">
+            <form>
+                
+            </form>
+        </div>
     )
 
 }

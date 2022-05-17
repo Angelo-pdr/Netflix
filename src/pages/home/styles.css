@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: url("../../img/background.jpg") center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
