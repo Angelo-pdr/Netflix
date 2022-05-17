@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
 
 .container {
     width: 100vw;
@@ -11,6 +5,7 @@
     background: url("../../img/background.jpg") center;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
 }
 
