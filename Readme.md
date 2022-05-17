@@ -1,1 +1,1 @@
-Crinado um clone da netflix
+Criando um clone da netflix
