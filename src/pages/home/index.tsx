@@ -5,6 +5,7 @@ export const Home = () => {
     return(
         <div className="container">
             <FormCadastro/>
+            <div className="gradient"></div>
         </div>
     )
 
