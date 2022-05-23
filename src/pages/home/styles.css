@@ -2,15 +2,15 @@
 .container {
     width: 100vw;
     height: 100vh;
-    background: url("../../img/background.jpg") center;
+    background: url("../../img/background.jpg") center center;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    position: relative;
 }
 
 .gradient{
-    
+    position: absolute;
     background: rgba(0, 0, 0, 0.4);
     background-image: linear-gradient(
         to top,
@@ -19,5 +19,4 @@
         rgba(0, 0, 0, 0.8) 100%,
     );
     
-    position: absolute;
 }
