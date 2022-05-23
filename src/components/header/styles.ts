@@ -11,6 +11,12 @@ export const Header = styled.div`
     padding: 0 45px;
     padding-top: 20px;
 
+    img{
+        margin: auto;
+        height: 2rem;
+    }
+
+
     button{
         margin-left: 10px;
         padding: 8px 18px;

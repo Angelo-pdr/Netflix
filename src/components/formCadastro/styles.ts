@@ -27,29 +27,29 @@ export const Container = styled.div`
         margin-bottom: 20px;
     }
 
-    @media(max-width:412px){
+    @media(max-width: 700px){
 
         display:grid;
         justify-items: center;
-        max-width: 370px;
+        max-width: 800px;
         text-align: center;
         padding: 30px 0px;
 
         h1{
             max-width: 100%;
-            font-size: 1.7rem;
+            font-size: 3.1rem;
         }
 
         h2{
             max-width: 100%;
             margin: 16px 0;
-            font-size: 1.1rem;
+            font-size: 1.6rem;
             font-weight: 400;
         }
 
         h3{
             max-width: 450px;
-            font-size: 18px;
+            font-size: 23px;
             font-weight: 400;
             padding: 0 20px;
         }
@@ -62,6 +62,7 @@ export const Form = styled.form`
     height: 60px;
     max-width: 100%;
     
+
     input{
         font-size: 16px;
         padding-left: 10px;
@@ -79,13 +80,14 @@ export const Form = styled.form`
         border:none;
         font-size: 1.6rem;
         cursor: pointer;
+        border-radius: 3px;
     }
 
     button:hover{
         background: #f40612;
     }
 
-    @media(max-width: 412px){
+    @media(max-width: 700px){
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
@@ -96,8 +98,9 @@ export const Form = styled.form`
             color:black;
             border-none;
             outline: none;
-            height: 48px;
-            width: 100%;
+            height: 60px;
+            width: 80%;
+            margin: 0 10px;
         }
 
         button{
@@ -107,25 +110,24 @@ export const Form = styled.form`
             padding: 11px;
             cursor: pointer;
             margin-top: 10px;
+            height:40px;
             width: 113px;
+            
         }
     }
 `
   
 export const Gradient = styled.div`
-
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.8) 80%,
+        rgba(0, 0, 0, 0.8) 0,
         rgba(0, 0, 0, 0.0) 60%,
-        rgba(0, 0, 0, 0.8) 100%,
+        rgba(0, 0, 0, 0.12) 100%,
     );
-
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-        
 `
