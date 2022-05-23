@@ -6,7 +6,7 @@ export const Container = styled.div`
     max-width: 800px;
     text-align: center;
     padding: 10px;
-    
+    z-index: 1;
 
     h1{
         max-width: 640px;
