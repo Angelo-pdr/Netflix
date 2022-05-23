@@ -3,7 +3,6 @@ import * as C from './styles'
 export const FormCadastro = () => {
 
     return(
-        
         <C.Container>
             <h1>Filmes, séries e muito mais. Sem limites.</h1>
             <h2>Assista onde quiser. Cancele quando quiser.</h2>
@@ -13,6 +12,5 @@ export const FormCadastro = () => {
                 <button>Vamos lá</button>
             </C.Form>
         </C.Container>
-       
     )
 }

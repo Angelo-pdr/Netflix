@@ -1,13 +1,14 @@
 import {MainRoutes} from './routes/mainRoutes'
-import {Container} from './App.styles'
+import * as C from './App.styles'
+import {AreaHeader} from './components/header'
 
 const App = () => {
 
- 
   return (
-    <Container>
+    <C.Container>
+      <AreaHeader/>
        <MainRoutes/>
-    </Container>
+    </C.Container>
    
   )
 }
