@@ -34,12 +34,12 @@ export const Container = styled.div`
         padding: 30px 0px;
 
         h1{
-            max-width: 640px;
+            max-width: 100%;
             font-size: 1.7rem;
         }
 
         h2{
-            max-width: 640px;
+            max-width: 100%;
             margin: 16px 0;
             font-size: 1.1rem;
             font-weight: 400;
@@ -85,16 +85,27 @@ export const Form = styled.form`
 
     @media(max-width: 412px){
         display: grid;
-        grid-template-columns: 430px 183px;
-        height: 48px;
-        max-width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        
+        width: 100%;
 
         input{
-            font-size: 16px;
-            padding: 10px 10px 0;
             color:black;
             border-none;
             outline: none;
+            height: 48px;
+            width: 100%;
+        }
+
+        button{
+            background-color: #e50914;
+            border:none;
+            font-size: 1rem;
+            padding: 11px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 113px;
         }
     }
 `
