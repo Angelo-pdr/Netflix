@@ -5,9 +5,9 @@ export const AreaHeader = () => {
     return(
        <Header>
            <a href="*"><img src="../../img/netflix.svg" alt="logo da netflix" /></a>
-           <div>
+           <div className='buttons'>
                <button>Português</button>
-               <button>Entrar</button>
+               <button className='logIn'>Entrar</button>
            </div>
        </Header> 
     )

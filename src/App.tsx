@@ -1,6 +1,7 @@
 import {MainRoutes} from './routes/mainRoutes'
-import * as C from './App.styles'
 import {AreaHeader} from './components/header'
+
+import * as C from './App.styles'
 
 const App = () => {
 

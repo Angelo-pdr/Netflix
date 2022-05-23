@@ -7,6 +7,7 @@ export const Container = styled.div`
     text-align: center;
     padding: 10px;
     
+
     h1{
         max-width: 640px;
         font-size: 3rem;
@@ -111,3 +112,20 @@ export const Form = styled.form`
     }
 `
   
+export const Gradient = styled.div`
+
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 80%,
+        rgba(0, 0, 0, 0.0) 60%,
+        rgba(0, 0, 0, 0.8) 100%,
+    );
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        
+`
