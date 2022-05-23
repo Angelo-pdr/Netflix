@@ -7,7 +7,7 @@ export const container = styled.div`
     height: 560px;
     background-color: rgba(0,0,0,.75);
     z-index: 1;
-
+    
     h1{
         margin-bottom: 28px;
     }
@@ -16,7 +16,12 @@ export const container = styled.div`
 export const label = styled.label`
     width: 100%;
     display:block;
+    border-radius: 4px;
+    height: 50px;
+    background: #333;
     input{
-
+        padding: 16px 20px 0;
+        background: #333;
+        border: none;
     }
 `
