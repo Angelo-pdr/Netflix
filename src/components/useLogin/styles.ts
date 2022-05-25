@@ -16,12 +16,15 @@ export const container = styled.div`
 export const label = styled.label`
     width: 100%;
     display:block;
-    border-radius: 4px;
-    height: 50px;
-    background: #333;
+    display:flex;
+    justify-content: center;
+    align-item: center;
+    margin-bottom: 20px;
+
     input{
         padding: 16px 20px 0;
-        background: #333;
+        flex: 1;
         border: none;
+        height: 50px;
     }
 `
