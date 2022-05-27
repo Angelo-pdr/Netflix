@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const LoginTop = styled.div`
+    &::before{
+        content: "";
+        height: 91px;
+        display: block
+    }
+`
+
 export const container = styled.div`
    
     padding: 60px 68px 40px;
@@ -8,11 +16,10 @@ export const container = styled.div`
     background-color: rgba(0,0,0,.75);
     margin: 90px 0;
     z-index: 1;
-    
+
     h1{
         margin-bottom: 28px;
     }
-
 `
 
 export const label = styled.label`
@@ -44,8 +51,7 @@ export const label = styled.label`
         right:50px;
     }
 
-    button{
-        
+    button{    
         background-color: transparent;
         color: #8c8c8c;
         height: 50px;
@@ -55,3 +61,51 @@ export const label = styled.label`
         left: 77%
     }
 `
+
+export const Button = styled.button`
+    width: 100%;
+    border-radius: 4px;
+    background: #e50914;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 12px;
+    border: none;
+`
+
+export const Opcoes = styled.div`
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #b3b3b3;
+
+    div{
+        display:flex;
+        align-items: center;
+    }
+
+    .span{
+        margin-left: 5px;
+        color: #b3b3b3;
+        cursor: initial;
+    }
+
+
+    .checkbox{
+        color: #b3b3b3;
+        font-size: 18px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #b3b3b3;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+`
+
