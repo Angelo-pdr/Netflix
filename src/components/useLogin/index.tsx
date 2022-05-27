@@ -6,10 +6,10 @@ export const UserLogin = () => {
         <C.container>
             <h1>Entrar</h1>
             <C.label>
-                <input type="text" name="" id="" />
+                <input type="text" placeholder='Email ou número de telefone'/>
             </C.label>
             <C.label>
-                <input type="password" name="" id="" />
+                <input type="password" className='inputPassword' placeholder='Senha' />
                 <button>MOSTRA</button>
             </C.label>
         </C.container>

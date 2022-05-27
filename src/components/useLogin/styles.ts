@@ -19,28 +19,39 @@ export const label = styled.label`
     min-width: 100%;
     display:block;
     display:flex;
-    justify-content: center;
+    justify-content: left;
     align-item: center;
     margin-bottom: 36px;
-    background-color: transparent;
+    background-color: #333;
     border-radius: 4px;
     border-bottom: 2px solid #e87c03;
+    position: relative;
 
     input{
         flex: 1;
         font-size: 16px;
-        height: 50px;
         background: #333;
         border: none;
-        position: relative;
+        outline: none;
+        height: 50px;
+        width: 314px;
+        padding: 16px 20px 0;
+        border-radius: 4px;
     }
+
+    .inputPassword{
+        max-width:70%;
+        right:50px;
+    }
+
     button{
-        padding: 0 12px;
+        
         background-color: transparent;
         color: #8c8c8c;
-        background: #333;
         height: 50px;
+        border: none;
+        cursor: pointer;
         position: absolute;
-        left: 10px;
+        left: 77%
     }
 `
