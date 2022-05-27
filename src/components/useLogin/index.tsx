@@ -10,6 +10,7 @@ export const UserLogin = () => {
             </C.label>
             <C.label>
                 <input type="password" name="" id="" />
+                <button>MOSTRA</button>
             </C.label>
         </C.container>
     )
