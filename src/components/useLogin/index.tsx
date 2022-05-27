@@ -5,12 +5,11 @@ export const UserLogin = () => {
     return(
         <C.container>
             <h1>Entrar</h1>
-
             <C.label>
-                <input type="email" placeholder='Email ou número de telefone' />
+                <input type="text" name="" id="" />
             </C.label>
             <C.label>
-                <input type="password" placeholder='Senha'></input>
+                <input type="password" name="" id="" />
             </C.label>
         </C.container>
     )
