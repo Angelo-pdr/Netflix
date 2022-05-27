@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const LoginTop = styled.div`
-    &::before{
-        content: "";
-        height: 91px;
-        display: block
-    }
-`
-
 export const container = styled.div`
    
     padding: 60px 68px 40px;
@@ -16,10 +8,12 @@ export const container = styled.div`
     background-color: rgba(0,0,0,.75);
     margin: 90px 0;
     z-index: 1;
+    position: relative;
 
     h1{
         margin-bottom: 28px;
     }
+
 `
 
 export const label = styled.label`
@@ -28,7 +22,7 @@ export const label = styled.label`
     display:flex;
     justify-content: left;
     align-item: center;
-    margin-bottom: 36px;
+    margin-bottom: 20px;
     background-color: #333;
     border-radius: 4px;
     border-bottom: 2px solid #e87c03;
@@ -74,7 +68,7 @@ export const Button = styled.button`
     border: none;
 `
 
-export const Opcoes = styled.div`
+export const Options = styled.div`
     width: 100%;
     display:flex;
     align-items: center;
@@ -109,3 +103,33 @@ export const Opcoes = styled.div`
     }
 `
 
+export const Signit = styled.div`
+    width: 100%;
+    
+    color: #737373;
+    display: flex;
+    align-item: center;
+    
+    p{
+        color: #737373;
+    }
+
+    a{
+        margin-left: 5px;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+`
+export const OptionOther = styled.div`
+    max-width: 314px;
+    height: 133px;
+    .knowMore{
+        margin-top: 10px;
+        font-size: 13px;
+        color: #737373;
+       
+    }
+`
