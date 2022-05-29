@@ -28,7 +28,7 @@ export const UserLogin = () => {
                     </div>
                     <p className='knowMore'>
                         Esta página é protegida pelo Google reCAPTCHA
-                        para garantir que você não é um robô. <a>Saiba mais</a>.
+                        para garantir que você não é um robô. <a className='saibaMais'>Saiba mais</a>.
                     </p>
                 </C.Signit>
                 

@@ -4,9 +4,10 @@ export const container = styled.div`
    
     padding: 60px 68px 40px;
     min-width: 380px;
-    height: 560px;
+    min-height: 560px;
     background-color: rgba(0,0,0,.75);
-    margin: 90px 0;
+    margin-bottom: 90px;
+
     z-index: 1;
     position: relative;
 
@@ -108,7 +109,8 @@ export const Options = styled.div`
 export const Signit = styled.div`
     width: 100%;
     color: #737373;
-    padding-bottom: 133px;
+    height: 133px;
+    
     div{
         display: flex;
         align-item: center;
@@ -126,14 +128,18 @@ export const Signit = styled.div`
     a:hover{
         text-decoration: underline;
     }
+
     max-width: 314px;
-      
+    
     .knowMore{
         margin-top: 10px;
         font-size: 13px;
-        color: #737373;
-        padding-bottom: 50px;
-        margin-bottom: 133px;
+        color: #737373; 
+    }
+
+    .saibaMais{
+        color: #0071eb;
+        margin: 0;
     }
 `
 export const OptionOther = styled.div`
