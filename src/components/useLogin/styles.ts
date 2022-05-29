@@ -17,7 +17,7 @@ export const container = styled.div`
 `
 
 export const label = styled.label`
-    min-width: 100%;
+    width: 100%;
     display:block;
     display:flex;
     justify-content: left;
@@ -70,11 +70,13 @@ export const Button = styled.button`
 
 export const Options = styled.div`
     width: 100%;
+    padding-bottom: 100px;
     display:flex;
     align-items: center;
     justify-content: space-between;
     font-size: 13px;
     color: #b3b3b3;
+
 
     div{
         display:flex;
@@ -105,10 +107,12 @@ export const Options = styled.div`
 
 export const Signit = styled.div`
     width: 100%;
-    
     color: #737373;
-    display: flex;
-    align-item: center;
+    padding-bottom: 133px;
+    div{
+        display: flex;
+        align-item: center;
+    }
     
     p{
         color: #737373;
@@ -122,14 +126,16 @@ export const Signit = styled.div`
     a:hover{
         text-decoration: underline;
     }
-`
-export const OptionOther = styled.div`
     max-width: 314px;
-    height: 133px;
+      
     .knowMore{
         margin-top: 10px;
         font-size: 13px;
         color: #737373;
-       
+        padding-bottom: 50px;
+        margin-bottom: 133px;
     }
+`
+export const OptionOther = styled.div`
+    
 `

@@ -22,13 +22,16 @@ export const UserLogin = () => {
             </C.Options>
             <C.OptionOther>
                 <C.Signit>
-                    <p>Novo por aqui? </p>
-                    <a href="/">Assine agora.</a>
+                    <div>
+                        <p>Novo por aqui? </p>
+                        <a href="/">Assine agora.</a>
+                    </div>
+                    <p className='knowMore'>
+                        Esta página é protegida pelo Google reCAPTCHA
+                        para garantir que você não é um robô. <a>Saiba mais</a>.
+                    </p>
                 </C.Signit>
-                <p className='knowMore'>
-                    Esta página é protegida pelo Google reCAPTCHA
-                    para garantir que você não é um robô. <a>Saiba mais</a>.
-                </p>
+                
             </C.OptionOther>
         </C.container>
     )
