@@ -1,6 +1,25 @@
 import styled from "styled-components";
 
-export const container = styled.div`
+
+export const Container = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+`
+export const Flex = styled.div`
+    
+    max-width: 450px;
+    
+`
+
+export const Before = styled.div`
+    display: block;
+    height: 91px;  
+`
+export const LoginArea = styled.div`
    
     padding: 60px 68px 40px;
     min-width: 380px;
@@ -10,10 +29,10 @@ export const container = styled.div`
 
     z-index: 1;
     position: relative;
-
     h1{
         margin-bottom: 28px;
     }
+
 
 `
 
@@ -137,11 +156,17 @@ export const Signit = styled.div`
         color: #737373; 
     }
 
-    .saibaMais{
+    .know{
         color: #0071eb;
         margin: 0;
     }
 `
-export const OptionOther = styled.div`
-    
+export const Footer = styled.footer`
+    width: 100%;
+    height: 250px;
+    margin-top: 0;
+    background: rgba(0,0,0,.75);
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: #757575;
 `
