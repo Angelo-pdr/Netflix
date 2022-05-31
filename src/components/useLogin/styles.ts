@@ -168,15 +168,17 @@ export const Footer = styled.footer`
     background: rgba(0,0,0,.75);
     padding-bottom: 20px;
     font-size: 1em;
-    color: #757575;
-
+    z-index: 1;
+    
     .information{
         margin 0 auto;
         padding: 30px 0;
         margin: 0 175px;
+        
     }
     p{
         margin-bottom: 30px;
+        color: #757575;
     }
 
     .grid{
@@ -184,15 +186,18 @@ export const Footer = styled.footer`
         grid-template-columns: repeat(4, 1fr);
         grid-row-gap: 20px;
         list-style: none;
+        
     }
 
     li{
         font-size: 13px;
+        
     }
 
     a{
         cursor: pointer;
         text-decoration: none;
+        color: #757575;
     }
 
     a:hover{
@@ -200,14 +205,14 @@ export const Footer = styled.footer`
     }
 
     .buttonLanguage{
-        background-image: 
-        
-        margin-top: 20px;
+        margin-top: 30px;
         padding: 15px 40px;
         text-align: left;
         font-size: 13px;
         background-color: transparent;
         color: #757575;
         border: 1px solid #333;
+        cursor: pointer;
     }
+    
 `
