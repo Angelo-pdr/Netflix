@@ -198,4 +198,16 @@ export const Footer = styled.footer`
     a:hover{
         text-decoration: underline;
     }
+
+    .buttonLanguage{
+        background-image: 
+        
+        margin-top: 20px;
+        padding: 15px 40px;
+        text-align: left;
+        font-size: 13px;
+        background-color: transparent;
+        color: #757575;
+        border: 1px solid #333;
+    }
 `

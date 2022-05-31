@@ -47,6 +47,7 @@ export const UserLogin = () => {
                         <li><a href="/login">Preferências de cookies</a></li>
                         <li><a href="/login">Informações corporativas</a></li>
                     </ul>
+                    <button className='buttonLanguage'>Português</button>
                 </div>
             </C.Footer>
         </C.Container>
