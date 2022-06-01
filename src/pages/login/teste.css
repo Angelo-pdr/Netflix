@@ -7,7 +7,7 @@
 .container{
     min-width: 100vw;
     min-height: 100vh;
-    background: url("../../img/backLogin.jpg") center center;
+    background: url("../../img/backLogin.jpg") center center no-repeat;
     
 }
 

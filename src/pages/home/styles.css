@@ -3,9 +3,10 @@ img{
     width: 100%;
 }
 
+
 .main {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background: url("../../img/background.jpg") center center no-repeat;
     display: flex;
     align-items: center;
@@ -17,18 +18,51 @@ img{
     background-color: black;
     border-top: 8px solid #222;
     padding: 4rem 0;
+    z-index: 1;
 }
 
 .container{
+    background-color: black;
     max-width: 1130px;
     margin: 0 auto;
+    
 }
 
 .grid{
-    
+    background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 1.1fr 1fr;
+   
 }
+
+.grid h1{
+    font-size: 3.1rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.grid h2{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.img-tv{
+    position: relative;
+}
+
+.img-tv img{
+    position: relative;
+    z-index: 1;
+    
+}
+.video-tv{
+    position: absolute;
+    top: 80px;
+    left: 70px;
+    max-width: 400px;
+}
+
 
 @media (max-width: 410px){
     .main{

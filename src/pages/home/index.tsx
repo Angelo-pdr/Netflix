@@ -16,8 +16,8 @@ export const Home = () => {
                     <div className="grid">
                         <div>
                             <h1>Aproveite na TV.</h1>
-                            <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray
-                                e outros dispositivos.</p>
+                            <h2>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray
+                            e outros dispositivos.</h2>
                         </div>
                         <div className="img-tv">
                             <img src="../src/img/tv.png" alt="imagem-da-televisão"  />
