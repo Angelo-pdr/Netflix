@@ -16,3 +16,17 @@
         background-color: black;
     }
 }
+
+.grid{
+    height: 450px;
+    max-width: 100%;
+    padding: 70px 45px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 150px 200px;
+}
+
+.grid img{
+    max-width: 100%;
+}
