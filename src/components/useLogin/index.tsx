@@ -51,8 +51,6 @@ export const UserLogin = () => {
                 </div>
             </C.Footer>
         </C.Container>
-       
         </>
-        
     )
 }

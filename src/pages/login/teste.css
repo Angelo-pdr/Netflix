@@ -5,10 +5,10 @@
 }
 
 .container{
-    min-width: 100vw;
+    max-width: 100%;
     min-height: 100vh;
-    background: url("../../img/backLogin.jpg") center center no-repeat;
-    
+    background: url("../src/img/backLogin.jpg") center center no-repeat;
+    position: relative;
 }
 
 .header{
@@ -32,4 +32,5 @@
     left: 0;
     right: 0;
     bottom: 0;
+    
 }
