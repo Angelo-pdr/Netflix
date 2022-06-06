@@ -60,7 +60,14 @@ img{
     left: 70px;
     max-width: 400px;
 }
+.left{
+    order: 2;
+}
+.right{
+    order: 1;
+}
 
+.
 
 @media (max-width: 410px){
     .main{

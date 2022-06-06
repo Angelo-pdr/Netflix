@@ -14,7 +14,7 @@ export const Home = () => {
             <section className="section">
               <div className="container">
                     <div className="grid">
-                        <div>
+                        <div >
                             <h1>Aproveite na TV.</h1>
                             <h2>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray
                             e outros dispositivos.</h2>
@@ -33,11 +33,11 @@ export const Home = () => {
             <section className="section">
               <div className="container">
                     <div className="grid">
-                        <div>
+                        <div className="left">
                             <h1>Baixe séries para assistir offline.</h1>
                             <h2>Salve seus títulos favoritos e sempre tenha algo para assistir.</h2>
                         </div>
-                        <div className="img-tv">
+                        <div className="right">
                             <img src="../src/img/telefone.jpg" alt="imagem-da-televisão"  />
                         </div>
                     </div>
@@ -63,13 +63,13 @@ export const Home = () => {
             </section>
             <section className="section">
               <div className="container">
-                    <div className="grid">
+                    <div className="left">
                         <div>
                             <h1>Crie perfis para crianças.</h1>
                             <h2>Deixe as crianças se aventurarem com seus
                                 personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</h2>
                         </div>
-                        <div className="img-tv">
+                        <div className="right">
                             <img src="../src/img/kids.png" alt="imagem-da-televisão"  />
                         </div>
                     </div>
