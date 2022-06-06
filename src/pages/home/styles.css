@@ -24,14 +24,12 @@ img{
 .container{
     max-width: 1130px;
     margin: 0 auto;
-    
 }
 
 .grid{
     display: grid;
     align-items: center;
     grid-template-columns: 1.1fr 1fr;
-    
 }
 
 .grid h1{
@@ -90,9 +88,10 @@ img{
 
 @media(max-width: 817px){
     img{
+        margin-top: -20px;
         display: block;
-        width: 600px;
-        height: 450px;
+        max-width: 600px;
+        max-height: 450px;
     }
     .main{
         width: 100%;
@@ -100,12 +99,17 @@ img{
         background-color: black;
     }
 
+    .section{
+        background-color: black;
+        border-top: 8px solid #222;
+        padding: 75px 45px;
+        z-index: 1;
+    }
+
     .grid{
         margin: 0 auto;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .grid h1{
@@ -116,23 +120,23 @@ img{
     }
 
     .grid h2{
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         font-weight: 400;
         text-align: center;
     }
 
     .video-tv{
         position: absolute;
-        top: 90px;
-        left: 100px;
+        top: 20px;
+        left: 42px;
         height: auto;
-        width: 80%;
+        max-width: 80%;
     }
     
     .video-tv2{
         position: absolute;
-        height: auto;
-        top: 30px;
+        max-height: auto;
+        top: 10px;
         left: 60px;
         max-width: 63%;
     }
@@ -140,11 +144,16 @@ img{
 
     .left{
         order: 1;
+        z-index: 1;
     }
     
     .right{
         order: 2;
     }
-
-
+    .right img{
+        margin-top: 0;
+    }
+    .text{
+        z-index: 1;
+    }
 }

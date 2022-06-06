@@ -14,7 +14,7 @@ export const Home = () => {
             <section className="section">
               <div className="container">
                     <div className="grid">
-                        <div >
+                        <div className="text">
                             <h1>Aproveite na TV.</h1>
                             <h2>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray
                             e outros dispositivos.</h2>
@@ -46,7 +46,7 @@ export const Home = () => {
             <section className="section">
               <div className="container">
                     <div className="grid">
-                        <div>
+                        <div className="text">
                             <h1>Assista quando quiser.</h1>
                             <h2>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</h2>
                         </div>
