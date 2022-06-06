@@ -12,7 +12,7 @@ export const Home = () => {
                 <FormCadastro/>
             </div>
             <section className="section">
-              <div className="container">
+              <div className="containerHome">
                     <div className="grid">
                         <div className="text">
                             <h1>Aproveite na TV.</h1>
@@ -31,7 +31,7 @@ export const Home = () => {
               </div>
             </section>
             <section className="section">
-              <div className="container">
+              <div className="containerHome">
                     <div className="grid">
                         <div className="left">
                             <h1>Baixe séries para assistir offline.</h1>
@@ -44,7 +44,7 @@ export const Home = () => {
               </div>
             </section>
             <section className="section">
-              <div className="container">
+              <div className="containerHome">
                     <div className="grid">
                         <div className="text">
                             <h1>Assista quando quiser.</h1>
@@ -62,7 +62,7 @@ export const Home = () => {
               </div>
             </section>
             <section className="section">
-              <div className="container">
+              <div className="containerHome">
                     <div className="grid">
                         <div  className="left">
                             <h1>Crie perfis para crianças.</h1>
