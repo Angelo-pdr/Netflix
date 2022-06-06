@@ -38,7 +38,7 @@ export const Home = () => {
                             <h2>Salve seus títulos favoritos e sempre tenha algo para assistir.</h2>
                         </div>
                         <div className="right">
-                            <img src="../src/img/telefone.jpg" alt="imagem-da-televisão"  />
+                            <img src="../src/img/telefone.jpg" alt="imagem-da-telefone"  />
                         </div>
                     </div>
               </div>
@@ -51,8 +51,8 @@ export const Home = () => {
                             <h2>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</h2>
                         </div>
                         <div className="img-tv">
-                            <img src="../src/img/multiplataforma.png" alt="imagem-da-televisão"  />
-                            <video className="video-tv" autoPlay playsInline muted loop>
+                            <img src="../src/img/multiplataforma.png" alt="multiplataforma"  />
+                            <video className="video-tv2" autoPlay playsInline muted loop>
                                     <source 
                                     src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
                                     type="video/mp4"/>
@@ -63,14 +63,14 @@ export const Home = () => {
             </section>
             <section className="section">
               <div className="container">
-                    <div className="left">
-                        <div>
+                    <div className="grid">
+                        <div  className="left">
                             <h1>Crie perfis para crianças.</h1>
                             <h2>Deixe as crianças se aventurarem com seus
                                 personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</h2>
                         </div>
                         <div className="right">
-                            <img src="../src/img/kids.png" alt="imagem-da-televisão"  />
+                            <img src="../src/img/kids.png" alt="imagem-da-kids" />
                         </div>
                     </div>
               </div>
