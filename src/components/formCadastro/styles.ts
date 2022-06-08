@@ -54,6 +54,33 @@ export const Container = styled.div`
             padding: 0 20px;
         }
     }
+
+    @media(width: 412px){
+        display:grid;
+        justify-items: center;
+        max-width: 800px;
+        text-align: center;
+        padding: 30px 0px;
+
+        h1{
+            max-width: 100%;
+            font-size: 1.7rem;
+        }
+
+        h2{
+            max-width: 100%;
+            margin: 16px 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        h3{
+            max-width: 320px;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 0 20px;
+        }
+    }
 `
 
 export const Form = styled.form`
@@ -113,6 +140,21 @@ export const Form = styled.form`
             height:40px;
             width: 113px;
             
+        }
+    }
+
+    @media(width: 412px){
+
+        input{
+            color:black;
+            border: 1px solid #8c8c8c;
+            padding 10px;
+            padding-bottom: 0px;
+            outline: none;
+            height: 48px;
+            min-width: 90%;
+            margin: 0px;
+            margin-bottom: 10px
         }
     }
 `
