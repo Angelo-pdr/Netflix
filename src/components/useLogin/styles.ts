@@ -15,6 +15,12 @@ export const Flex = styled.div`
 export const Before = styled.div`
     display: block;
     height: 91px;  
+
+    @media(width: 412px){
+        &{
+            display: none;
+        }
+    }
 `
 export const LoginArea = styled.div`
    
@@ -32,7 +38,9 @@ export const LoginArea = styled.div`
 
     @media(width: 412px){
         &{
-            padding: 0 20px;
+            padding: 30px 20px;
+            margin-bottom: 0px;
+
         }
     }
 
@@ -167,7 +175,7 @@ export const Footer = styled.footer`
     width: 100%;
     height: 250px;
     margin-top: 0;
-    background: rgba(0,0,0,.9);
+    background: rgba(0,0,0,0.9);
     padding-bottom: 20px;
     font-size: 1em;
     z-index: 1;
@@ -217,4 +225,23 @@ export const Footer = styled.footer`
         cursor: pointer;
     }
     
+    @media(width: 412px){
+        
+        &{
+            border-bottom: 1px solid blue;
+            height: 100%;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 10px;
+            list-style: none;
+            
+        }
+
+        li{
+            font-size: 13px;
+        }
+    }
 `
