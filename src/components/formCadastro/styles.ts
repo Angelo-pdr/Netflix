@@ -145,6 +145,9 @@ export const Form = styled.form`
 
     @media(width: 412px){
 
+        &{
+            height: 100%;
+        }
         input{
             color:black;
             border: 1px solid #8c8c8c;

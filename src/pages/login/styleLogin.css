@@ -34,3 +34,28 @@
     bottom: 0;
     
 }
+
+@media( width: 412px){
+
+    .container{
+        max-width: 100%;
+        min-height: 100vh;
+        background: black;
+        position: relative;
+    }
+
+    .header{
+        position: absolute;
+        z-index: 1;
+        height: 45px;
+        display: block;
+        
+    }
+
+    .header img{
+        margin-top: 10px;
+        margin-left: -20px;
+        width: auto;
+        height: 20px;
+    }
+}

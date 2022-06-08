@@ -7,12 +7,9 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 `
 export const Flex = styled.div`
-    
     max-width: 450px;
-    
 `
 
 export const Before = styled.div`
@@ -33,6 +30,11 @@ export const LoginArea = styled.div`
         margin-bottom: 28px;
     }
 
+    @media(width: 412px){
+        &{
+            padding: 0 20px;
+        }
+    }
 
 `
 
