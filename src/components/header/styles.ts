@@ -9,7 +9,7 @@ export const Header = styled.div`
     justify-content: space-between;
     height: 45px;
     padding: 0 45px;
-    padding-top: 20px;
+    padding-top: 40px;
 
     img{
         margin: auto;
@@ -18,7 +18,7 @@ export const Header = styled.div`
 
 
     button{
-        margin-left: 10px;
+        margin-left: 30px;
         padding: 8px 18px;
         cursor: pointer;
         border: 1px solid #aaa;
