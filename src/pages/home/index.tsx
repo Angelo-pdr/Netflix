@@ -1,6 +1,7 @@
 import "./styles.css"
 import {FormCadastro} from '../../components/formCadastro';
 import {AreaHeader} from '../../components/header'
+import {QuestionSession} from "../../components/QuestionSession"
 
 export const Home = () => {
     
@@ -75,6 +76,7 @@ export const Home = () => {
                     </div>
               </div>
             </section>
+            <QuestionSession/>
         </>
     )
 
