@@ -11,8 +11,8 @@ export const QuestionSession = () => {
                 <C.AreaQuestion>
                     <C.Questions>
                         <li>
-                            <button>O que é a Netflix?</button>
-                            <div>
+                            <button className='faq-question'>O que é a Netflix?</button>
+                            <div className='faq-answer'>
                                 A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries,
                                 filmes e documentários premiados em milhares de aparelhos conectados à internet.
                                 <br />
@@ -23,16 +23,16 @@ export const QuestionSession = () => {
                             </div>
                         </li>
                         <li>
-                            <button>Quanto custa a Netflix?</button>
-                            <div>
+                            <button className='faq-question'>Quanto custa a Netflix?</button>
+                            <div className='faq-answer'>
                                 Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por
                                 uma taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato
                                 nem taxas extras.
                             </div>
                         </li>
                         <li>
-                            <button>Onde posso assistir?</button>
-                            <div>
+                            <button className='faq-question'>Onde posso assistir?</button>
+                            <div className='faq-answer'>
                                 Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.
                                 com para começar a assistir no computador ou em qualquer aparelho conectado
                                 à Internet compatível com o aplicativo Netflix, como Smart TVs, smartphones,
@@ -45,8 +45,8 @@ export const QuestionSession = () => {
                             </div>
                         </li>
                         <li>
-                            <button>Como faço para cancelar?</button>
-                            <div>
+                            <button className='faq-question'>Como faço para cancelar?</button>
+                            <div className='faq-answer'>
                                 A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries,
                                 filmes e documentários premiados em milhares de aparelhos conectados à internet.
                                 <br />
@@ -57,15 +57,15 @@ export const QuestionSession = () => {
                             </div>
                         </li>
                         <li>
-                            <button>O que eu posso assistir na Netflix?</button>
-                            <div>
+                            <button className='faq-question'>O que eu posso assistir na Netflix?</button>
+                            <div className='faq-answer'>
                                 A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix 
                                 premiados e muito mais. Assista o quanto quiser, quando quiser.
                             </div>
                         </li>
                         <li>
-                            <button>A Netflix é adequada para crianças??</button>
-                            <div>
+                            <button className='faq-question'>A Netflix é adequada para crianças?</button>
+                            <div className='faq-answer'>
                                 A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se 
                                 divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos 
                                 responsáveis.
