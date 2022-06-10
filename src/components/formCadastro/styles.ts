@@ -34,6 +34,7 @@ export const Container = styled.div`
         max-width: 800px;
         text-align: center;
         padding: 30px 0px;
+        margin-top: 30px;
 
         h1{
             max-width: 100%;

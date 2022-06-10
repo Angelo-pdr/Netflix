@@ -162,7 +162,7 @@ img{
 
 @media(max-width: 415px){
     img{
-        margin-top: -20px;
+        margin-top: -10px;
         display: block;
         max-width: 600px;
         max-height: 450px;
@@ -176,7 +176,7 @@ img{
     .section{
         background-color: black;
         border-top: 8px solid #222;
-        padding: 75px 45px;
+        padding: 50px 20px;
         z-index: 1;
     }
 
@@ -194,7 +194,7 @@ img{
     }
 
     .grid h2{
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         font-weight: 400;
         text-align: center;
     }

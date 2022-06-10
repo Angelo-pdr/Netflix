@@ -228,20 +228,26 @@ export const Footer = styled.footer`
     @media(width: 412px){
         
         &{
-            border-bottom: 1px solid blue;
+            display: flex;
+            border-top: 1px solid #e5e5e5;
             height: 100%;
+            width: 100%;
         }
 
+        .information{
+            margin 0 auto;
+            padding: 30px 0;
+            margin: 0 30px;       
+        }
+        
         .grid{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-row-gap: 10px;
-            list-style: none;
-            
         }
 
         li{
             font-size: 13px;
+            margin-left: 20px
         }
     }
 `
