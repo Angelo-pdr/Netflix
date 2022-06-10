@@ -19,10 +19,32 @@ export const HeaderText = styled.h1`
 `
 
 export const AreaQuestion = styled.div`
-
+    margin: 55px 222px;
 `
 
 export const Questions = styled.ul`
 
+li{
+    list-style: none;
+    background: #303030;
+    
+    margin-bottom:8px ;
+    
+}
+
+li button{
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    background: #303030;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 1px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+div{
+    display: none;
+}
 `
 
