@@ -76,6 +76,11 @@ export const Home = () => {
                     </div>
               </div>
             </section>
+            <section className="section">
+                <div className="containerHome">
+                    <h1>Perguntas frequentes</h1>
+                </div>
+            </section>
             <QuestionSession/>
         </>
     )
