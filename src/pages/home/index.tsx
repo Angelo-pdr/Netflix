@@ -80,11 +80,12 @@ export const Home = () => {
                 <div className="containerHome">
                     <h1 className="headerText">Perguntas frequentes</h1>
                     <ul className="areaQuestion">
-                        <QuestionSession/>
-                        <QuestionSession/>
-                        <QuestionSession/>
-                        <QuestionSession/>
-                        <QuestionSession/>
+                        <QuestionSession title="O que é a Netflix?" class=""/>
+                        <QuestionSession title="Quanto custa a Netflix?" class=""/>
+                        <QuestionSession title="Onde posso assistir?" class=""/>
+                        <QuestionSession title=" Como faço para cancelar?" class=""/>
+                        <QuestionSession title="O que eu posso assistir na Netflix?" class=""/>
+                        <QuestionSession title="A Netflix é adequada para crianças?" class=""/>
                     </ul>
                 </div>
             </section>

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const Questions = styled.ul`
+export const Questions = styled.li`
 
-li{
-    list-style: none;
-    margin-bottom: 8px;
-    max-width: 815px;
-}
+
+list-style: none;
+margin-bottom: 8px;
+max-width: 815px;
+
 
 .faq-question{
     padding: 20px 30px;
