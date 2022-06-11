@@ -87,10 +87,13 @@ img{
 .headerText{
     text-align: center;
     font-size: 3.1rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
 }
 
 .areaQuestion{
-    margin: 55px 222px;
+    width: 75%;
+    margin: 3em auto;
 }
 
 
