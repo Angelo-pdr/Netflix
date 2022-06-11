@@ -78,7 +78,8 @@ export const Home = () => {
             </section>
             <section className="section">
                 <div className="containerHome">
-                    <h1>Perguntas frequentes</h1>
+                    <h1 className="headerText">Perguntas frequentes</h1>
+                    <div className="areaQuestion"></div>
                 </div>
             </section>
             <QuestionSession/>

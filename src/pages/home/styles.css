@@ -84,6 +84,16 @@ img{
     order: 1;
 }
 
+.headerText{
+    text-align: center;
+    font-size: 3.1rem;
+}
+
+.areaQuestion{
+    margin: 55px 222px;
+}
+
+
 @media(max-width: 950px){
     img{
         margin-top: -10px;
