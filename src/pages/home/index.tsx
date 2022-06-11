@@ -79,10 +79,16 @@ export const Home = () => {
             <section className="section">
                 <div className="containerHome">
                     <h1 className="headerText">Perguntas frequentes</h1>
-                    <div className="areaQuestion"></div>
+                    <ul className="areaQuestion">
+                        <QuestionSession/>
+                        <QuestionSession/>
+                        <QuestionSession/>
+                        <QuestionSession/>
+                        <QuestionSession/>
+                    </ul>
                 </div>
             </section>
-            <QuestionSession/>
+            
         </>
     )
 
