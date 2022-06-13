@@ -79,7 +79,29 @@ export const Home = () => {
                     </div>
               </div>
             </section>
-            <QuestionSession />
+           <section className="containerHome">
+                <div className="section">
+                    <h1 className="headerText">Perguntas frequentes</h1>
+                    <div className="areaQuestion">
+                        <ul>
+                            <QuestionSession title="O que é a Netflix?" 
+                            mandatoryText="
+                            A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries,
+                            filmes e documentários premiados em milhares de aparelhos conectados à internet
+                            "
+                            optionalText="
+                            Você pode assistir a quantos filmes e séries quiser, 
+                            quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível.
+                            Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
+                            "
+                            active="active" 
+                            setActive={setActive} 
+                            />
+                        </ul>
+                    </div>
+                </div>
+           </section>
+            
         </>
     )
 }
