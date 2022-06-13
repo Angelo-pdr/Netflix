@@ -23,6 +23,15 @@ img{
     width: 100%;
 }
 
+.AccordionList{
+    background-color: black;
+    border-top: 8px solid #222;
+    padding: 70px 45px;
+    z-index: 1;
+    width: 100%;
+
+}
+
 .containerHome{
     max-width: 1100px;
     max-height: 850px;
@@ -243,5 +252,21 @@ img{
     }
     .text{
         z-index: 1;
+    }
+
+    .AccordionList{
+        padding: 50px 0;
+    }
+
+    .headerText{
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
+    }
+
+    .areaQuestion{
+        width: 100%;
+        margin: 3em auto;
     }
 }

@@ -79,7 +79,7 @@ export const Home = () => {
                     </div>
               </div>
             </section>
-           <section className="section">
+           <section className="AccordionList">
                 <div className="containerHome">
                     <h1 className="headerText">Perguntas frequentes</h1>
                     <div className="areaQuestion">

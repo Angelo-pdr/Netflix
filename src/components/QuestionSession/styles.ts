@@ -21,6 +21,15 @@ export const Container = styled.div`
         display: none
     }
     
+    @media(width:412px){
+        .faq-answer-open{
+            display:block;
+            background: #303030;
+            padding: 1.2em;
+            text-align: left;
+            font-size: 1.6rem;
+        }    
+    }
 `
 export const ButtonQuestion = styled.h1`
     padding: 20px 30px;
