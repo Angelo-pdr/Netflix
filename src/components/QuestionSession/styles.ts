@@ -54,13 +54,20 @@ li{
 
 
 
-.faq-answer{
+.faq-answer-closed{
+    background: #303030;
+    padding: 1.2em;
+    text-align: left;
+    font-size: 1.6rem;
+    display: none
+}
+
+.faq-answer-open{
+    display:block;
     background: #303030;
     padding: 1.2em;
     text-align: left;
     font-size: 1.6rem;
 }
-
-
 `
 
