@@ -30,6 +30,7 @@ export const ButtonQuestion = styled.h1`
     cursor: pointer;
     margin-bottom: 1px;
     font-size: 1.6rem;
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
     align-item: center;
@@ -43,6 +44,5 @@ export const ButtonQuestion = styled.h1`
         background: url("../src/img/fechar.svg") no-repeat center center;
         transform: rotate(45deg);
     }
-
   
 `

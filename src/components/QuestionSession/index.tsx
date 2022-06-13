@@ -3,20 +3,35 @@ import * as C from './styles'
 
 type Props = {
     title: string
-    mandatoryText: string,
-    optionalText?: string,
+    mandatoryText: string
+    optionalText?: string
 }
 
 export const QuestionSession = ({title, mandatoryText, optionalText }:Props) => {
 
+    const [active, setActive] = useState<string>("faq-answer-open")
+
+    const checkClass = () =>{
+        return active != "faq-answer-open" ? setActive("faq-answer-open"): setActive("faq-answer-closed")
+    } 
+
 
     return(
         <C.Container>
-            <C.ButtonQuestion className='faq-question'>{title}</C.ButtonQuestion>
-            <div className='faq-answer-open'>
+            <C.ButtonQuestion className='faq-question' onClick={checkClass}>
+                {title}
+            </C.ButtonQuestion>
+            <div className={active}>
                 {mandatoryText}
-                {optionalText}          
+                {optionalText != undefined &&
+                    <div>
+                        <br/>
+                        
+                        {optionalText}
+                    </div>
+                }          
             </div>
+            
         </C.Container>
     )
 }
