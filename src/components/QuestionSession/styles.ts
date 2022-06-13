@@ -5,7 +5,7 @@ export const Container = styled.div`
     margin-bottom: 8px;
     max-width: 815px;
 
-    .faq-answer-open{
+    .active{
         display:block;
         background: #303030;
         padding: 1.2em;

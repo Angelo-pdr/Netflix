@@ -4,9 +4,9 @@ import * as C from './styles'
 type Props = {
     title: string
     mandatoryText: string,
-    optionalText: string | null,
-    active?: string
-    setActive: () => string
+    optionalText?: string,
+    active: () => string | void
+    setActive: () => string | void
 }
 
 export const QuestionSession = ({title, mandatoryText, optionalText, active, setActive }:Props) => {
@@ -16,10 +16,9 @@ export const QuestionSession = ({title, mandatoryText, optionalText, active, set
     return(
         <C.Container>
             <C.ButtonQuestion className='faq-question'>{title}</C.ButtonQuestion>
-            <div className='faq-answer-open'>
-                {mandatoryText + "<br />" }
-                             
-                          
+            <div className="active">
+                {mandatoryText}
+                {optionalText}          
             </div>
         </C.Container>
     )
