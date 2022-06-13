@@ -79,8 +79,8 @@ export const Home = () => {
                     </div>
               </div>
             </section>
-           <section className="containerHome">
-                <div className="section">
+           <section className="section">
+                <div className="containerHome">
                     <h1 className="headerText">Perguntas frequentes</h1>
                     <div className="areaQuestion">
                         <ul>
@@ -94,8 +94,6 @@ export const Home = () => {
                             quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível.
                             Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
                             "
-                            active={active}
-                            setActive={setActive}
                             />
                             <QuestionSession title="O que é a Netflix?" 
                             mandatoryText="
@@ -107,8 +105,6 @@ export const Home = () => {
                             quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível.
                             Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.
                             "
-                            active={active}
-                            setActive={setActive}
                             />
                         </ul>
                     </div>
