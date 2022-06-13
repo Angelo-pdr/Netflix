@@ -9,7 +9,7 @@ type Props = {
 
 export const QuestionSession = ({title, mandatoryText, optionalText }:Props) => {
 
-    const [active, setActive] = useState<string>("faq-answer-open")
+    const [active, setActive] = useState<string>("faq-answer-closed")
 
     const checkClass = () =>{
         return active != "faq-answer-open" ? setActive("faq-answer-open"): setActive("faq-answer-closed")

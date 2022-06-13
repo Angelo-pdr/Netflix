@@ -27,11 +27,12 @@ export const Container = styled.div`
             background: #303030;
             padding: 1.2em;
             text-align: left;
-            font-size: 1.6rem;
+            font-size: 1.1rem;
         }    
     }
 `
 export const ButtonQuestion = styled.h1`
+
     padding: 20px 30px;
     background: #303030;
     border: none;
@@ -52,6 +53,20 @@ export const ButtonQuestion = styled.h1`
         height: 20px;
         background: url("../src/img/fechar.svg") no-repeat center center;
         transform: rotate(45deg);
+    }
+
+    @media(width: 412px){
+       
+        font-size: 1.1rem;
+       
+        &::after{
+            content: " ";
+            display: block;
+            width: 15px;
+            height: 15px;
+            background: url("../src/img/fechar.svg") no-repeat center center;
+            transform: rotate(45deg);
+        }
     }
   
 `
