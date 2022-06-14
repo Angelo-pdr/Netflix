@@ -10,7 +10,8 @@ export const Container = styled.div`
     }
 
     @media(max-width: 700px){
-        h3{
+
+        .FormCadastro h3{
             max-width: 450px;
             font-size: 23px;
             font-weight: 400;
@@ -19,8 +20,13 @@ export const Container = styled.div`
     }
 
     @media(width: 412px){
-        
 
+        .FormCadastro h3{
+            max-width: 320px;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 0 20px;
+        }
     }
 `
 
@@ -89,6 +95,7 @@ export const Form = styled.form`
         &{
             height: 100%;
         }
+        
         input{
             color:black;
             border: 1px solid #8c8c8c;
