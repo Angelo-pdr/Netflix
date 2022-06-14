@@ -2,7 +2,6 @@ import "./styles.css"
 import {FormCadastro} from '../../components/formCadastro';
 import {AreaHeader} from '../../components/header'
 import {QuestionSession} from "../../components/QuestionSession"
-import { useState } from "react";
 
 export const Home = () => {
 
@@ -15,7 +14,7 @@ export const Home = () => {
                     <h1>Filmes, séries e muito mais. Sem limites.</h1>
                     <h2>Assista onde quiser. Cancele quando quiser.</h2>
                     <FormCadastro/>
-                </div>
+                </div>  
             </div>
             <section className="section">
               <div className="containerHome">

@@ -10,26 +10,6 @@ export const Container = styled.div`
     }
 
     @media(max-width: 700px){
-
-        display:grid;
-        justify-items: center;
-        max-width: 800px;
-        text-align: center;
-        padding: 30px 0px;
-        margin-top: 30px;
-
-        h1{
-            max-width: 100%;
-            font-size: 3.1rem;
-        }
-
-        h2{
-            max-width: 100%;
-            margin: 16px 0;
-            font-size: 1.6rem;
-            font-weight: 400;
-        }
-
         h3{
             max-width: 450px;
             font-size: 23px;
@@ -39,30 +19,8 @@ export const Container = styled.div`
     }
 
     @media(width: 412px){
-        display:grid;
-        justify-items: center;
-        max-width: 800px;
-        text-align: center;
-        padding: 30px 0px;
+        
 
-        h1{
-            max-width: 100%;
-            font-size: 1.7rem;
-        }
-
-        h2{
-            max-width: 100%;
-            margin: 16px 0;
-            font-size: 1.2rem;
-            font-weight: 400;
-        }
-
-        h3{
-            max-width: 320px;
-            font-size: 18px;
-            font-weight: 400;
-            padding: 0 20px;
-        }
     }
 `
 
