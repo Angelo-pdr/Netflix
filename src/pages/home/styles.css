@@ -4,6 +4,10 @@ img{
     max-height: 100%;
 }
 
+ul{
+    margin-bottom: 52px;
+}
+
 .gradient{
     background: rgba(0, 0, 0, 0.10);
     background-image: linear-gradient(
@@ -29,6 +33,29 @@ img{
     position: relative;
 }
 
+.FormCadastro{
+    display:grid;
+    justify-items: center;
+    max-width: 800px;
+    text-align: center;
+    padding: 10px;
+    z-index: 1;
+    margin: 0;
+
+}
+
+.FormCadastro h1{
+    max-width: 640px;
+    font-size: 3rem;
+}
+
+.FormCadastro h2{
+    max-width: 640px;
+    margin: 16px 0;
+    font-size: 1.6;
+    font-weight: 400;
+}
+
 .section{
     background-color: black;
     border-top: 8px solid #222;
@@ -49,7 +76,7 @@ img{
 .containerHome{
     max-width: 1100px;
     max-height: 850px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .grid{

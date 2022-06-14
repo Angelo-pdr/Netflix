@@ -1,24 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display:grid;
-    justify-items: center;
-    max-width: 800px;
-    text-align: center;
-    padding: 10px;
-    z-index: 1;
-
-    h1{
-        max-width: 640px;
-        font-size: 3rem;
-    }
-
-    h2{
-        max-width: 640px;
-        margin: 16px 0;
-        font-size: 1.6;
-        font-weight: 400;
-    }
 
     h3{
         max-width: 640px;
@@ -85,11 +67,11 @@ export const Container = styled.div`
 `
 
 export const Form = styled.form`
+
     display: grid;
     grid-template-columns: 430px 183px;
     height: 60px;
     max-width: 100%;
-    
 
     input{
         font-size: 16px;

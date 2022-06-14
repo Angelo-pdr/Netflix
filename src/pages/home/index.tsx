@@ -11,7 +11,11 @@ export const Home = () => {
             <AreaHeader/>
             <div className="main">
                 <div className="gradient"></div>
-                <FormCadastro/>
+                <div className="FormCadastro">
+                    <h1>Filmes, séries e muito mais. Sem limites.</h1>
+                    <h2>Assista onde quiser. Cancele quando quiser.</h2>
+                    <FormCadastro/>
+                </div>
             </div>
             <section className="section">
               <div className="containerHome">
@@ -126,7 +130,7 @@ export const Home = () => {
                              Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.
                             "
                             />
-                             <QuestionSession title="Onde posso assistir?" 
+                             <QuestionSession title="A Netflix é adequada para crianças?" 
                             mandatoryText="
                             A experiência infantil da Netflix faz parte da sua assinatura para que as crianças
                             se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão
@@ -139,6 +143,7 @@ export const Home = () => {
                             "
                             />
                         </ul>
+                        <FormCadastro/>
                     </div>
                 </div>
            </section>
