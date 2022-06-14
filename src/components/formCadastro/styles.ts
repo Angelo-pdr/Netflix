@@ -162,18 +162,3 @@ export const Form = styled.form`
         }
     }
 `
-  
-export const Gradient = styled.div`
-    background: rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.8) 0,
-        rgba(0, 0, 0, 0.0) 60%,
-        rgba(0, 0, 0, 0.12) 100%,
-    );
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-`

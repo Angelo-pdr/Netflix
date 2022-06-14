@@ -5,8 +5,6 @@ import {QuestionSession} from "../../components/QuestionSession"
 import { useState } from "react";
 
 export const Home = () => {
-    
-    const [active, setActive] = useState<String>("active")
 
     return(
         <>
@@ -144,7 +142,6 @@ export const Home = () => {
                     </div>
                 </div>
            </section>
-            
         </>
     )
 }
