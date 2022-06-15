@@ -36,12 +36,12 @@ ul{
 .FormCadastro{
     display:grid;
     justify-items: center;
-    align-items: center;
-    text-align: center;
     max-width: 800px;
-    padding: 30px;
+    text-align: center;
+    padding: 10px;
     z-index: 1;
     margin: 0;
+
 }
 
 .FormCadastro h1{
@@ -143,9 +143,8 @@ ul{
 
 .areaQuestion{
     width: 75%;
-    margin: 3em auto;  
+    margin: 3em auto;
 }
-
 
 @media(max-width: 950px){
 

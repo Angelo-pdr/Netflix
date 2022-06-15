@@ -7,7 +7,7 @@ type Props = {
     optionalText?: string
 }
 
-export const QuestionSession = ({title, mandatoryText, optionalText }:Props) => {
+export const FunctionAccordionList = ({title, mandatoryText, optionalText }:Props) => {
 
     const [active, setActive] = useState<string>("faq-answer-closed")
     const [activeButton, setActiveButton] = useState<string>("")
