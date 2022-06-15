@@ -36,8 +36,9 @@ ul{
 .FormCadastro{
     display:grid;
     justify-items: center;
-    max-width: 800px;
+    align-items: center;
     text-align: center;
+    max-width: 800px;
     padding: 30px;
     z-index: 1;
     margin: 0;

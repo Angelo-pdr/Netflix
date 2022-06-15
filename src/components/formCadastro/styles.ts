@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
+      max-width: 800px;
+        margin: 0 auto;
     h3{
         text-align: center;
         font-size: 1.2;
@@ -37,9 +38,9 @@ export const Form = styled.form`
 
     display: grid;
     grid-template-columns: 430px 183px;
+    
     margin-bottom: 40px;
     height: 60px;
-    max-width: 100%;
 
     input{
         font-size: 16px;
