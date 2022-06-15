@@ -3,26 +3,29 @@ import styled from "styled-components";
 export const Container = styled.div`
 
     h3{
-        max-width: 640px;
+        text-align: center;
         font-size: 1.2;
         font-weight: 400;
         margin-bottom: 20px;
     }
 
-    @media(max-width: 700px){
+    @media(max-width: 850px){
 
         .FormCadastro h3{
             max-width: 450px;
             font-size: 23px;
             font-weight: 400;
             padding: 0 20px;
+            text-align: center;
         }
     }
 
     @media(width: 412px){
+        padding: 0 20px;
 
         .FormCadastro h3{
             max-width: 320px;
+            text-align: center;
             font-size: 18px;
             font-weight: 400;
             padding: 0 20px;
@@ -34,6 +37,7 @@ export const Form = styled.form`
 
     display: grid;
     grid-template-columns: 430px 183px;
+    margin-bottom: 40px;
     height: 60px;
     max-width: 100%;
 
@@ -61,11 +65,11 @@ export const Form = styled.form`
         background: #f40612;
     }
 
-    @media(max-width: 700px){
+    @media(max-width: 850px){
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
-        
+        max-width: 100%;
         width: 100%;
 
         input{
