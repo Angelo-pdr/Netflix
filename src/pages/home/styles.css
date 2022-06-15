@@ -4,9 +4,7 @@ img{
     max-height: 100%;
 }
 
-ul{
-    margin-bottom: 52px;
-}
+
 
 .gradient{
     background: rgba(0, 0, 0, 0.10);
@@ -64,14 +62,7 @@ ul{
     width: 100%;
 }
 
-.AccordionList{
-    background-color: black;
-    border-top: 8px solid #222;
-    padding: 70px 45px;
-    z-index: 1;
-    width: 100%;
 
-}
 
 .containerHome{
     max-width: 1100px;
@@ -134,12 +125,6 @@ ul{
     order: 1;
 }
 
-.headerText{
-    text-align: center;
-    font-size: 3.1rem;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-}
 
 .areaQuestion{
     width: 75%;
