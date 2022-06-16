@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-    
-
     h3{
         max-width: 100%;
         text-align: center;
@@ -18,15 +16,18 @@ export const Container = styled.div`
             max-width: 450px;
             font-size: 23px;
             font-weight: 400;
-            margin: 0px;
+            padding: 0 20px;
         }
     }
 
     @media(width: 412px){
+        min-width: 100%;
 
-        width: 100%;
         h3{
-            max-width: 320px;
+            
+            margin: 0 auto;
+            margin-bottom: 10px;
+            max-width: 350px;
             font-size: 18px;
             font-weight: 400;
             padding: 0 20px;
@@ -98,20 +99,8 @@ export const Form = styled.form`
 
     @media(width: 412px){
 
-        
-        height: 100%;
-        
-
-        button{
-            background-color: #e50914;
-            border:none;
-            font-size: 1rem;
-            padding: 11px;
-            cursor: pointer;
-            margin-top: -30px;
-            height:40px;
-            width: 113px;
-            
+        &{
+            height: 100%;
         }
         
         input{

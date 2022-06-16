@@ -1,5 +1,6 @@
 import * as C from "./styles"
 import {FunctionAccordionList} from "../../helpers/FunctionAccordionList"
+import {FormCadastro} from "../formCadastro"
 
 export const AccordionList = () => {
 
@@ -66,6 +67,7 @@ export const AccordionList = () => {
                         "
                         />
                     </C.List>
+                    <FormCadastro/>
                </C.AreaQuestion>
             </C.ContainerHome>
         </C.ContainerList>

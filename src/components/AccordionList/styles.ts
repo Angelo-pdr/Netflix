@@ -55,4 +55,8 @@ export const AreaQuestion = styled.div`
 
 export const List = styled.ul`
     margin-bottom: 52px;
+
+    @media(max-width: 415px){
+        margin-bottom: 22px;
+    }
 `
