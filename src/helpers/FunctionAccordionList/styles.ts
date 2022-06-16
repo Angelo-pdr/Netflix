@@ -65,6 +65,7 @@ export const ButtonQuestion = styled.div`
        
         .faq-question{
             font-size: 1.1rem;
+            padding: 14px 21px;
         }
        
         faq-question::after{

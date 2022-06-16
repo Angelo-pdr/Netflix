@@ -1,4 +1,4 @@
-import "./styles.css"
+
 import * as C from "./styles"
 import {FormCadastro} from '../../components/formCadastro';
 import {AreaHeader} from '../../components/header'
