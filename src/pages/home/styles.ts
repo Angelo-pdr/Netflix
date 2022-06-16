@@ -156,6 +156,8 @@ export const Section = styled.section`
         border-top: 8px solid #222;
         padding: 50px 20px;
         z-index: 1;
+
+
     }
 `
 export const ContainerSection = styled.div`
@@ -273,5 +275,60 @@ export const CardContainer = styled.div`
             order: 2;
             z-index: 0;
         }
+    }
+
+    @media(max-width: 415px){
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column
+
+        h1{
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+    
+        h2{
+            font-size: 1.1rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    
+        .video-tv{
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            height: auto;
+            max-width: 80%;
+        }
+        
+        .video-tv2{
+            position: absolute;
+            max-height: auto;
+            top: 20px;
+            left: 60px;
+            max-width: 63%;
+        }
+    
+        .left{
+            order: 1;
+            z-index: 1;
+        }
+        
+        .right{
+            order: 2;
+        }
+
+        .right img{
+            margin-top: 0;
+        }
+
+        .text{
+            z-index: 1;
+        }
+    
+
+    
     }
 `
