@@ -18,8 +18,8 @@ export const Home = () => {
                 </C.FormRegistration>  
             </C.Main>
             <C.Section>
-              <div className="containerHome">
-                    <div className="grid">
+              <C.ContainerSection>
+                    <C.CardContainer>
                         <div className="text">
                             <h1>Aproveite na TV.</h1>
                             <h2>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray
@@ -33,12 +33,12 @@ export const Home = () => {
                                     type="video/mp4"/>
                             </video>
                         </div>
-                    </div>
-              </div>
+                    </C.CardContainer>
+              </C.ContainerSection>
             </C.Section>
             <C.Section>
-              <div className="containerHome">
-                    <div className="grid">
+              <C.ContainerSection>
+                    <C.CardContainer>
                         <div className="left">
                             <h1>Baixe séries para assistir offline.</h1>
                             <h2>Salve seus títulos favoritos e sempre tenha algo para assistir.</h2>
@@ -46,12 +46,12 @@ export const Home = () => {
                         <div className="right">
                             <img src="../src/img/telefone.jpg" alt="imagem-da-telefone"  />
                         </div>
-                    </div>
-              </div>
+                    </C.CardContainer>
+              </C.ContainerSection>
             </C.Section>
             <C.Section>
-              <div className="containerHome">
-                    <div className="grid">
+              <C.ContainerSection>
+                    <C.CardContainer>
                         <div className="text">
                             <h1>Assista quando quiser.</h1>
                             <h2>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</h2>
@@ -64,12 +64,12 @@ export const Home = () => {
                                     type="video/mp4"/>
                             </video>
                         </div>
-                    </div>
-              </div>
+                    </C.CardContainer>
+              </C.ContainerSection>
             </C.Section>
             <C.Section>
-              <div className="containerHome">
-                    <div className="grid">
+              <C.ContainerSection>
+                    <C.CardContainer>
                         <div  className="left">
                             <h1>Crie perfis para crianças.</h1>
                             <h2>Deixe as crianças se aventurarem com seus
@@ -78,8 +78,8 @@ export const Home = () => {
                         <div className="right">
                             <img src="../src/img/kids.png" alt="imagem-da-kids" />
                         </div>
-                    </div>
-              </div>
+                    </C.CardContainer>
+              </C.ContainerSection>
             </C.Section>
             <AccordionList />
         </C.Container>
