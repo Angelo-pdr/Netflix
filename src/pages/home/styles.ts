@@ -38,7 +38,7 @@ export const Main = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 20px;
+  
 
     @media(max-width: 950px) {
         width: 100%;

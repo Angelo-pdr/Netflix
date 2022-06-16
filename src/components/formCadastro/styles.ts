@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
+    
+
     h3{
-        max-width: 640px;
+        max-width: 100%;
+        text-align: center;
         font-size: 1.2;
         font-weight: 400;
         margin-bottom: 20px;
@@ -11,29 +14,32 @@ export const Container = styled.div`
 
     @media(max-width: 700px){
 
-        .FormCadastro h3{
+        h3{
             max-width: 450px;
             font-size: 23px;
             font-weight: 400;
-            padding: 0 20px;
+            margin: 0px;
         }
     }
 
     @media(width: 412px){
 
-        .FormCadastro h3{
+        width: 100%;
+        h3{
             max-width: 320px;
             font-size: 18px;
             font-weight: 400;
             padding: 0 20px;
         }
     }
+   
 `
 
 export const Form = styled.form`
 
     display: grid;
     grid-template-columns: 430px 183px;
+    justify-content: center;
     height: 60px;
     max-width: 100%;
 
@@ -92,16 +98,26 @@ export const Form = styled.form`
 
     @media(width: 412px){
 
-        &{
-            height: 100%;
+        
+        height: 100%;
+        
+
+        button{
+            background-color: #e50914;
+            border:none;
+            font-size: 1rem;
+            padding: 11px;
+            cursor: pointer;
+            margin-top: -30px;
+            height:40px;
+            width: 113px;
+            
         }
         
         input{
             color:black;
             border: 1px solid #8c8c8c;
             padding 10px;
-            padding-bottom: 0px;
-            outline: none;
             height: 48px;
             min-width: 90%;
             margin: 0px;
