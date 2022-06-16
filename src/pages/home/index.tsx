@@ -1,4 +1,5 @@
 import "./styles.css"
+import * as C from "./styles"
 import {FormCadastro} from '../../components/formCadastro';
 import {AreaHeader} from '../../components/header'
 import {AccordionList} from "../../components/AccordionList"
@@ -6,17 +7,17 @@ import {AccordionList} from "../../components/AccordionList"
 export const Home = () => {
 
     return(
-        <>
+        <C.Container>
             <AreaHeader/>
-            <div className="main">
-                <div className="gradient"></div>
-                <div className="FormCadastro">
+            <C.Main >
+                <C.Gradient></C.Gradient>
+                <C.FormRegistration >
                     <h1>Filmes, séries e muito mais. Sem limites.</h1>
                     <h2>Assista onde quiser. Cancele quando quiser.</h2>
                     <FormCadastro/>
-                </div>  
-            </div>
-            <section className="section">
+                </C.FormRegistration>  
+            </C.Main>
+            <C.Section>
               <div className="containerHome">
                     <div className="grid">
                         <div className="text">
@@ -34,8 +35,8 @@ export const Home = () => {
                         </div>
                     </div>
               </div>
-            </section>
-            <section className="section">
+            </C.Section>
+            <C.Section>
               <div className="containerHome">
                     <div className="grid">
                         <div className="left">
@@ -47,8 +48,8 @@ export const Home = () => {
                         </div>
                     </div>
               </div>
-            </section>
-            <section className="section">
+            </C.Section>
+            <C.Section>
               <div className="containerHome">
                     <div className="grid">
                         <div className="text">
@@ -65,8 +66,8 @@ export const Home = () => {
                         </div>
                     </div>
               </div>
-            </section>
-            <section className="section">
+            </C.Section>
+            <C.Section>
               <div className="containerHome">
                     <div className="grid">
                         <div  className="left">
@@ -79,8 +80,8 @@ export const Home = () => {
                         </div>
                     </div>
               </div>
-            </section>
+            </C.Section>
             <AccordionList />
-        </>
+        </C.Container>
     )
 }
