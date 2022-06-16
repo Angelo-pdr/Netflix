@@ -71,3 +71,12 @@ export const Section = styled.section`
     width: 100%;
 
 `
+
+export const CardContainer = styled.div`
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.1fr 1fr;
+
+    
+
+`
