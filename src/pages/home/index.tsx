@@ -82,6 +82,32 @@ export const Home = () => {
               </C.ContainerSection>
             </C.Section>
             <AccordionList />
+            <C.Footer>
+                <C.ContainerSection>
+                    <div>
+                        <p>Dúvidas? Ligue 0800 591 8942</p>
+                        <ul className="grid">
+                            <li>Perguntas frequentes</li>
+                            <li>Relações com investidores</li>
+                            <li>Formas de assistir</li>
+                            <li>Informações corporativas</li>
+                            <li>Só na Netflix</li>
+                            <li>Centro de ajuda</li>
+                            <li>Carreiras</li>
+                            <li>Termos de uso</li>
+                            <li>Entre em contato</li>
+                            <li>Conta</li>
+                            <li>Resgatar cartão pré-pago</li>
+                            <li>Privacidade</li>
+                            <li>Teste de velocidade</li>
+                            <li>Media Center</li>
+                            <li>Comprar cartão pré-pago</li>
+                            <li>Preferências de cookies</li>
+                            <li>Avisos legais</li>
+                        </ul>
+                    </div>
+                </C.ContainerSection>
+            </C.Footer>
         </C.Container>
     )
 }

@@ -333,3 +333,30 @@ export const CardContainer = styled.div`
     
     }
 `
+
+export const Footer = styled.footer`
+    background-color: black;
+    border-top: 8px solid #222;
+    padding: 70px 45px;
+    z-index: 1;
+    width: 100%;
+    margin 0 auto;
+    p{
+        margin-bottom: 30px;
+        color: #757575;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 20px;
+        list-style: none;
+        max-width: 1000px;
+    }
+
+    li{
+        font-size: 13px;
+        color: #757575;
+    }
+
+`
