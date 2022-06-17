@@ -33,16 +33,17 @@ export const Container = styled.div`
 export const Main = styled.div`
     width: 100%;
     height: 100vh;
+    
     background: url("../src/img/background.jpg") center center no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-  
+
 
     @media(max-width: 950px) {
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         background-color: black;
     }
 
@@ -79,9 +80,8 @@ export const FormRegistration = styled.div`
     z-index: 1;
     margin: 0;
 
-
     h1{
-        max-width: 640px;
+        max-width: 540px;
         font-size: 3rem;
     }
     
@@ -99,17 +99,18 @@ export const FormRegistration = styled.div`
         justify-items: center;
         max-width: 800px;
         text-align: center;
-        padding: 30px 0px;
+        padding: 75px 0px;
+
         
         h1{
-            max-width: 100%;
-            font-size: 3.1rem;
+            max-width: 640px;
+            font-size: 3.125rem;
         }
     
         h2{
-            max-width: 100%;
+            max-width: 640px;
             margin: 16px 0;
-            font-size: 1.6rem;
+            font-size: 1.625rem;
             font-weight: 400;
         }
     }
@@ -120,7 +121,7 @@ export const FormRegistration = styled.div`
         justify-items: center;
         max-width: 800px;
         text-align: center;
-        padding: 30px 0px;
+        padding: 70px 0px;
 
         h1{
             max-width: 100%;

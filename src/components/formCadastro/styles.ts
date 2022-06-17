@@ -68,6 +68,15 @@ export const Form = styled.form`
         background: #f40612;
     }
 
+    button:after{
+        content: "";
+        display:inline-block;
+        width: 10px;
+        height: 19px;
+        margin-left: 10px;
+        background: url("../src/img/seta.svg");
+    }
+
     @media(max-width: 700px){
         display: grid;
         grid-template-columns: 1fr;
