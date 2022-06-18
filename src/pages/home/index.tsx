@@ -83,7 +83,7 @@ export const Home = () => {
             </C.Section>
             <AccordionList />
             <C.Footer>
-                <C.ContainerSection>
+                <div className="">
                     <div>
                         <p>Dúvidas? Ligue 0800 591 8942</p>
                         <ul className="grid">
@@ -106,7 +106,7 @@ export const Home = () => {
                             <li>Avisos legais</li>
                         </ul>
                     </div>
-                </C.ContainerSection>
+                </div>
             </C.Footer>
         </C.Container>
     )
