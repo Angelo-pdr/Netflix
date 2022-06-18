@@ -83,29 +83,30 @@ export const Home = () => {
             </C.Section>
             <AccordionList />
             <C.Footer>
-                <div className="">
-                    <div>
+                <div className="areaFooter">
                         <p>Dúvidas? Ligue 0800 591 8942</p>
                         <ul className="grid">
-                            <li>Perguntas frequentes</li>
-                            <li>Relações com investidores</li>
-                            <li>Formas de assistir</li>
-                            <li>Informações corporativas</li>
-                            <li>Só na Netflix</li>
-                            <li>Centro de ajuda</li>
-                            <li>Carreiras</li>
-                            <li>Termos de uso</li>
-                            <li>Entre em contato</li>
-                            <li>Conta</li>
-                            <li>Resgatar cartão pré-pago</li>
-                            <li>Privacidade</li>
-                            <li>Teste de velocidade</li>
-                            <li>Media Center</li>
-                            <li>Comprar cartão pré-pago</li>
-                            <li>Preferências de cookies</li>
-                            <li>Avisos legais</li>
+                            <li><a href="#">Perguntas frequentes</a></li>
+                            <li><a href="#">Centro de ajuda</a></li>
+                            <li><a href="#">Conta</a></li>
+                            <li><a href="#">Media Center</a></li>
+                            <li><a href="#">Relações com investidores</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Resgatar cartão pré-pago</a></li>
+                            <li><a href="#">Comprar cartão pré-pago</a></li>
+                            <li><a href="#">Formas de assistirto</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Privacidade</a></li>
+                            <li><a href="#">Preferências de cookies</a></li>
+                            <li><a href="#">Informações corporativas</a></li>
+                            <li><a href="#">Entre em contato</a></li>
+                            <li><a href="#">Teste de velocidade</a></li>
+                            <li><a href="#">Avisos legais</a></li>
+                            <li><a href="#">Só na Netflix</a></li>
                         </ul>
-                    </div>
+                    <button className='buttonLanguage'>Português</button>
+
+                    <p className="footer-country">Netflix Brasil</p>
                 </div>
             </C.Footer>
         </C.Container>

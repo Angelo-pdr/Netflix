@@ -341,6 +341,13 @@ export const Footer = styled.footer`
     z-index: 1;
     width: 100%;
     margin 0 auto;
+
+    .areaFooter{
+        margin 0 auto;
+        padding: 30px 0;
+        margin: 0 175px;
+    }
+
     p{
         margin-bottom: 30px;
         color: #757575;
@@ -359,4 +366,63 @@ export const Footer = styled.footer`
         color: #757575;
     }
 
+    a{
+        cursor: pointer;
+        text-decoration: none;
+        color: #757575;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .buttonLanguage{
+        margin-top: 30px;
+        padding: 15px 40px;
+        text-align: left;
+        font-size: 13px;
+        background-color: transparent;
+        color: #757575;
+        border: 1px solid #333;
+        cursor: pointer;
+    }
+    
+    .footer-country{
+        font-size: 13px;
+        margin-top 24px;
+    }
+
+    @media(max-width: 950px){
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 20px;
+            list-style: none;
+            max-width: 1000px;
+        }
+        .areaFooter{
+            margin 0 auto;
+            padding: 30px 0;
+            
+        }
+    }
+
+    @media(max-width: 415px){
+   
+        padding: 10px 40px;
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 20px;
+            list-style: none;
+            max-width: 1000px;
+        }
+        .areaFooter{
+            margin 0 auto;
+            padding: 30px 0;
+            
+        }
+    }
 `
