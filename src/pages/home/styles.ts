@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: black;
 
     img{
         display: block;
@@ -39,21 +38,18 @@ export const Main = styled.div`
     justify-content: center;
     position: relative;
 
-
     @media(max-width: 950px) {
         width: 100%;
         min-height: 100vh;
     }
 
-    @media(max-width: 412px) {
+    @media(max-width: 415px) {
         width: 100%;
-        max-height: 231px;
-        background-color: black;
+        max-height: 532px;
     }
 `
 
 export const Gradient = styled.div`
-
     background: rgba(0, 0, 0, 0.6);
     background-image: linear-gradient(
         to top,
@@ -70,6 +66,7 @@ export const Gradient = styled.div`
 
 
 export const FormRegistration = styled.div`
+
     display:grid;
     justify-items: center;
     max-width: 800px;
@@ -114,13 +111,12 @@ export const FormRegistration = styled.div`
     }
 
     @media(max-width: 415px){
-        
         display:grid;
         justify-items: center;
         max-width: 800px;
-        max-height: 100%;
+        max-height: 371px;
         text-align: center;
-        padding: 70px 0px;
+        padding: 30px 0px;
 
         h1{
             max-width: 100%;
