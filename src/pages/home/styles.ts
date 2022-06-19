@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background-color: black;
-    width:100%;
-    height: 100vh;
 
     img{
         display: block;
@@ -21,6 +19,7 @@ export const Container = styled.div`
     }
 
     @media(max-width: 415px){
+
         img{
             margin-top: -10px;
             display: block;
@@ -44,12 +43,11 @@ export const Main = styled.div`
     @media(max-width: 950px) {
         width: 100%;
         min-height: 100vh;
-        background-color: black;
     }
 
-    @media(max-width: 415px){
+    @media(max-width: 412px) {
         width: 100%;
-        max-height: 532px;
+        max-height: 231px;
         background-color: black;
     }
 `
@@ -120,6 +118,7 @@ export const FormRegistration = styled.div`
         display:grid;
         justify-items: center;
         max-width: 800px;
+        max-height: 100%;
         text-align: center;
         padding: 70px 0px;
 

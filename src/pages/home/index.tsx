@@ -9,7 +9,7 @@ export const Home = () => {
     return(
         <C.Container>
             <AreaHeader/>
-            <C.Main >
+            <C.Main>
                 <C.Gradient></C.Gradient>
                 <C.FormRegistration >
                     <h1>Filmes, séries e muito mais. Sem limites.</h1>
