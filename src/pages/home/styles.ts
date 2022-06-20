@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
+    height: 100vh;
     img{
         display: block;
         width: 100%;
@@ -25,12 +25,13 @@ export const Container = styled.div`
             max-width: 600px;
             max-height: 450px;
         }
+
     }
 `
 
 export const Main = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 697px;
     
     background: url("../src/img/background.jpg") center center no-repeat;
     display: flex;
@@ -40,12 +41,13 @@ export const Main = styled.div`
 
     @media(max-width: 950px) {
         width: 100%;
-        min-height: 100vh;
+        height: 100vh;
     }
 
     @media(max-width: 415px) {
+
         width: 100%;
-        max-height: 532px;
+        height: 500px;
     }
 `
 
@@ -62,6 +64,10 @@ export const Gradient = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
+    @media(max-width: 415px) {
+        width: 100%;
+        height: 100%;
+    }
 `
 
 
@@ -93,6 +99,7 @@ export const FormRegistration = styled.div`
         display:grid;
         justify-items: center;
         max-width: 800px;
+        max-height: 100%;
         text-align: center;
         padding: 75px 0px;
 
