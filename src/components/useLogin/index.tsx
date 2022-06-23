@@ -5,19 +5,19 @@ export const UserLogin = () => {
     
     const [user, setUser] = useState<string>("")
     const [password, setPassword] = useState<string>("")
-    const [clasName, setclasName] = useState("closed")
+    const [clasName, setClasName] = useState("closed")
     const [borderCor, setBorderCor] = useState(false)
 
     const checkValidUser = () => {
-        if(password != "" && user != ""){
-            if(user == "angelo.ppedrosa@gmail.com" || user == "31975132125" && password == "123"){
-
-            }
-            return
+        
+        if((user == "angelo.ppedrosa@gmail.com" && password == "1234") || 
+            (user == "31975132125" && password == "1234")){
+            
         }
         else{
-            setclasName("open")
+            setClasName("open")
             setBorderCor(true)
+            console.log("deu ruim")
         }
     }
 
@@ -44,8 +44,8 @@ export const UserLogin = () => {
                             />
                             <button>MOSTRA</button>
                         </C.label>
-                        <span className={clasName}>Informe um email ou número de telefone válido.</span>
-                        <C.Button>Entrar</C.Button>
+                        <span className={clasName}>A senha deve ter entre 4 e 60 caracteres.</span>
+                        <C.Button onClick={checkValidUser}>Entrar</C.Button>
                         <C.Options>
                             <div>
                                 <input type="checkbox" placeholder='Lembre-se de min' className='checkbox'/>
