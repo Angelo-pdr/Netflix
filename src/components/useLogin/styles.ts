@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 type corButton ={
-    borderCor: string
+    borderCor: boolean
 }
 
 export const Container = styled.div`
@@ -70,10 +70,10 @@ export const label = styled.label<corButton>`
     display:flex;
     justify-content: left;
     align-item: center;
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #333;
     border-radius: 4px;
-    border-bottom: ${props =>props.borderCor};
+    border-bottom: ${props => props.borderCor ? "2px solid #e87c03" : "none"};
     position: relative;
 
     input{

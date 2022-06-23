@@ -5,6 +5,21 @@ export const UserLogin = () => {
     
     const [user, setUser] = useState<string>("")
     const [password, setPassword] = useState<string>("")
+    const [clasName, setclasName] = useState("closed")
+    const [borderCor, setBorderCor] = useState(false)
+
+    const checkValidUser = () => {
+        if(password != "" && user != ""){
+            if(user == "angelo.ppedrosa@gmail.com" || user == "31975132125" && password == "123"){
+
+            }
+            return
+        }
+        else{
+            setclasName("open")
+            setBorderCor(true)
+        }
+    }
 
     return(
         <C.Container>
@@ -13,15 +28,15 @@ export const UserLogin = () => {
                 <C.Before></C.Before>
                     <C.LoginArea className='Container'>
                         <h1>Entrar</h1>
-                        <C.label borderCor={user != "" ? "none" : "2px solid #e87c03"}>
+                        <C.label borderCor={borderCor}>
                             <input type="text"
                              placeholder='Email ou número de telefone'
                              value={user}
                              onChange={event => setUser(event.target.value)}
                             />
                         </C.label>
-                        <span className={`${user != "" ? "closed" : "open"}`}>Informe um email ou número de telefone válido.</span>
-                        <C.label borderCor={user != "" ? "none" : "2px solid #e87c03"}>
+                        <span className={clasName}>Informe um email ou número de telefone válido.</span>
+                        <C.label borderCor={borderCor}>
                             <input type="password" 
                             className='inputPassword' placeholder='Senha'
                             value={password}
@@ -29,7 +44,7 @@ export const UserLogin = () => {
                             />
                             <button>MOSTRA</button>
                         </C.label>
-                        <span className={`${password != "" ? "closed" : "open"}`}>Informe um email ou número de telefone válido.</span>
+                        <span className={clasName}>Informe um email ou número de telefone válido.</span>
                         <C.Button>Entrar</C.Button>
                         <C.Options>
                             <div>
