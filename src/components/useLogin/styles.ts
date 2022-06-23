@@ -1,10 +1,30 @@
 import styled from "styled-components";
 
+type corButton ={
+    borderCor: string
+}
+
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    .closed{
+        color: #e87c03;
+        margin-bottom: 6px;
+        font-size: 13px;
+        padding: 6px 3px;
+        display: none;
+    }
+
+    .open{
+        color: #e87c03;
+        margin-bottom: 6px;
+        font-size: 13px;
+        padding: 6px 3px;
+        display: block;
+    }
 `
 export const Flex = styled.div`
     max-width: 450px;
@@ -44,16 +64,16 @@ export const LoginArea = styled.div`
 
 `
 
-export const label = styled.label`
+export const label = styled.label<corButton>`
     width: 100%;
     display:block;
     display:flex;
     justify-content: left;
     align-item: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
     background-color: #333;
     border-radius: 4px;
-    border-bottom: 2px solid #e87c03;
+    border-bottom: ${props =>props.borderCor};
     position: relative;
 
     input{
