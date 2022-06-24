@@ -8,6 +8,7 @@ export const UserLogin = () => {
     const [password, setPassword] = useState<string>("")
     const [clasName, setClasName] = useState("closed")
     const [borderCor, setBorderCor] = useState(false)
+    const [show, setShow] = useState( false)
     const navigate = useNavigate()
 
     const checkValidUser = () => {
@@ -22,6 +23,17 @@ export const UserLogin = () => {
             console.log("deu ruim")
         }
     }
+
+    const handleChangeType = () => {
+        if(show == false){
+         
+          setShow(true)
+      
+        }else{
+          
+          setShow(false)
+        }
+      }
 
     return(
         <C.Container>
@@ -39,12 +51,12 @@ export const UserLogin = () => {
                         </C.label>
                         <span className={clasName}>Informe um email ou número de telefone válido.</span>
                         <C.label borderCor={borderCor}>
-                            <input type="password" 
+                            <input type={show ? "text" : "password"}  
                             className='inputPassword' placeholder='Senha'
                             value={password}
                             onChange={event => setPassword(event.target.value)}
                             />
-                            <button>MOSTRA</button>
+                            <button onClick={handleChangeType}>MOSTRA</button>
                         </C.label>
                         <span className={clasName}>A senha deve ter entre 4 e 60 caracteres.</span>
                         <C.Button onClick={checkValidUser}>Entrar</C.Button>
