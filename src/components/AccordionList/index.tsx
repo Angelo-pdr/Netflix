@@ -1,5 +1,5 @@
 import * as C from "./styles"
-import {FunctionAccordionList} from "../../helpers/FunctionAccordionList"
+import {FunctionAccordionList} from "../FunctionAccordionList"
 import {FormCadastro} from "../formCadastro"
 
 export const AccordionList = () => {
