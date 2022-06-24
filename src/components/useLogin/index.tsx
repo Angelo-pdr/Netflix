@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import * as C from './styles'
+import {useNavigate} from "react-router-dom"
 
 export const UserLogin = () => {
     
@@ -7,12 +8,13 @@ export const UserLogin = () => {
     const [password, setPassword] = useState<string>("")
     const [clasName, setClasName] = useState("closed")
     const [borderCor, setBorderCor] = useState(false)
+    const navigate = useNavigate()
 
     const checkValidUser = () => {
-        
+
         if((user == "angelo.ppedrosa@gmail.com" && password == "1234") || 
             (user == "31975132125" && password == "1234")){
-            
+                navigate("/memberArea")
         }
         else{
             setClasName("open")
