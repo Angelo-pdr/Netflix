@@ -6,12 +6,13 @@ import {MovieList} from '../../components/movieList'
 
 export const MemberArea = () => {
 
-    const [list, setList] = useState([{}])
+    const [list, setList] = useState([])
 
     useEffect(() => {
         const loadAll = async () => {
             const list = await tmdb.getMemberlist()
             setList(list)
+            console.log(list)
         }
 
         loadAll()
@@ -20,7 +21,7 @@ export const MemberArea = () => {
     return(
         <C.Container>
             {list.map((item, key) => (
-                <MovieList key={key} item={item}/>
+                <MovieList key={key} title={item.title} items={item.items}/>
             ))}
         </C.Container>
     )

@@ -1,14 +1,20 @@
 import * as C from "./styles"
 
 type Props ={
-    item: any
+    title: string,
+    items: any
 }
 
-export const MovieList = ({item}:Props) => {
+export const MovieList = ({title, items}:Props) => {
+    
     return(
         <C.Container>
-            <h1>{item.title}</h1>
-            
-        </C.Container>
+            <h1>{title}</h1>
+                {items.results.length > 0 && items.results.map((item, key) => (
+                    <div key={key}>
+                        <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt="" />
+                    </div>
+                ))}
+        </C.Container>  
     )
 }
