@@ -13,8 +13,8 @@ export const UserLogin = () => {
 
     const checkValidUser = () => {
 
-        if((user == "angelo.ppedrosa@gmail.com" && password == "1234") || 
-            (user == "31975132125" && password == "1234")){
+        if((user === "angelo.ppedrosa@gmail.com" && password === "1234") || 
+            (user == "31975732125" && password == "1234")){
                 navigate("/memberArea")
         }
         else{
