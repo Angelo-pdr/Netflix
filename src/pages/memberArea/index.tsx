@@ -1,12 +1,17 @@
 import * as C from "./styles"
 import tmdb from "../../tmdb"
 import { useEffect, useState } from "react"
-
 import {MovieList} from '../../components/movieList'
+
+type Items = {
+    slug: string
+    title: string
+    items: any
+}
 
 export const MemberArea = () => {
 
-    const [list, setList] = useState([])
+    const [list, setList] = useState<object[]>([])
 
     useEffect(() => {
         const loadAll = async () => {
@@ -14,10 +19,6 @@ export const MemberArea = () => {
             setList(list)
             console.log(list)
         }
-
-        let originals = list.forEach(i => i.slug === 'originals')
-        let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length -1))
-        let chosen = originals[0].items.results.length[randomChosen]
 
         loadAll()
     }, [])

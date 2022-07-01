@@ -12,8 +12,9 @@ export const MovieList = ({title, items}:Props) => {
             <h1>{title}</h1>
             <section>
                 {items.results.length > 0 && items.results.map((item, key) => (
-                        <div key={key} >
-                            <img src={`https://image.tmdb.org/t/p/w300${item.backdrop_path}`} alt={item.original_name} className="movies" />
+                        <div >
+                            <img src={`https://image.tmdb.org/t/p/w300${item.backdrop_path}`} 
+                            alt={item.original_name} className="movies" key={key} />
                         </div>
                     ))}
             </section>

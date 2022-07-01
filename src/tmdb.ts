@@ -10,7 +10,6 @@ const basicFetch = async (endpoint: string) => {
     return json
 }
 
-
 export default {
     getMemberlist:async () => {
         return[
