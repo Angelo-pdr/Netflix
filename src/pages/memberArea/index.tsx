@@ -11,7 +11,7 @@ type Items = {
 
 export const MemberArea = () => {
 
-    const [list, setList] = useState<object[]>([])
+    const [list, setList] = useState<Items[]>([])
 
     useEffect(() => {
         const loadAll = async () => {
@@ -19,7 +19,10 @@ export const MemberArea = () => {
             setList(list)
             console.log(list)
         }
-
+        
+        let originals = list.filter(i => i.slug == 'originals')
+        let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length))
+        console.log(randomChosen)
         loadAll()
     }, [])
 
