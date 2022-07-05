@@ -4,23 +4,21 @@ import * as C from "./styles"
 type Props ={
     title: string,
     items: any
-    key?: number
+    key: number
 }
 
-export const MovieList = ({title, items}:Props) => {
-    
+export const MovieList = ({title, items, key}:Props) => {
 
     return(
-        <C.Container>
-            
+        <C.Container key={key}>
             <h1>{title}</h1>
             <section>
-                {items.results.length > 0 && items.results.map((item, key) => (
-                        <div key={key}>
-                            <img src={`https://image.tmdb.org/t/p/w300${item.backdrop_path}`} 
-                            alt={item.original_name} className="movies"  />
-                        </div>
-                    ))}
+                {items.results.length > 0 && items.results.map((item: any, key: any) => (
+                    <div key={key}>
+                        <img src={`https://image.tmdb.org/t/p/w300${item.backdrop_path}`} 
+                         alt={item.name} className="movies"  />
+                    </div>
+                ))}
             </section>
         </C.Container>  
     )

@@ -6,28 +6,33 @@ import {MovieList} from '../../components/movieList'
 type Items = {
     slug: string
     title: string
-    items: any
+    items: object
 }
 
 export const MemberArea = () => {
 
     const [list, setList] = useState<Items[]>([])
-
+    const [banner, setBanner] = useState<string>(``)
     useEffect(() => {
         const loadAll = async () => {
             const list = await tmdb.getMemberlist()
             setList(list)
-            console.log(list)
+            let originals = list.filter(item => item.slug === 'originals')    
+            console.log(originals[0].items)
+            let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1))
+            let chosen = originals[0].items.results[randomChosen]
+
+            setBanner(`https://image.tmdb.org/t/p/original${chosen.backdrop_path}`)
         }
-        
-        let originals = list.filter(i => i.slug == 'originals')
-        let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length))
-        console.log(randomChosen)
+
         loadAll()
     }, [])
 
     return(
         <C.Container>
+            <C.Destaques banner={banner}>
+                    
+            </C.Destaques>
             {list.map((item, key) => (
                 <MovieList key={key} title={item.title} items={item.items}/>
             ))}

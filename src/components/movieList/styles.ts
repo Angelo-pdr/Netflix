@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+   display:block;
    width: 100%;
    padding: 30px 0px 0px 60px;
 
@@ -28,4 +29,3 @@ export const Container = styled.div`
     transform: scale(1)
    }
 `
-
