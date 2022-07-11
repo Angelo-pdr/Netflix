@@ -13,6 +13,8 @@ export const MemberArea = () => {
 
     const [list, setList] = useState<Items[]>([])
     const [banner, setBanner] = useState<string>(``)
+    const [title, setTitle] = useState<string>(``)
+    const [about, setAbout] = useState<String>(``)
     useEffect(() => {
         const loadAll = async () => {
             const list = await tmdb.getMemberlist()
@@ -23,6 +25,9 @@ export const MemberArea = () => {
             let chosen = originals[0].items.results[randomChosen]
 
             setBanner(`https://image.tmdb.org/t/p/original${chosen.backdrop_path}`)
+            setTitle(`${chosen.name}`)
+            setAbout(`${chosen.overview}`)
+            console.log(chosen)
         }
 
         loadAll()
@@ -31,7 +36,9 @@ export const MemberArea = () => {
     return(
         <C.Container>
             <C.Destaques banner={banner}>
-                    
+                <h1>{title}</h1>
+                <p>{about}</p>
+                    <C.Gradient></C.Gradient>
             </C.Destaques>
             {list.map((item, key) => (
                 <MovieList key={key} title={item.title} items={item.items}/>
