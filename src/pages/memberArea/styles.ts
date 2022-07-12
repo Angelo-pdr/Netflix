@@ -22,7 +22,8 @@ export const Destaques = styled.div<BannerType>`
         z-index: 1;
     }
     h1{
-        font-size: 50px;
+        font-size: 35px;
+        max-width:45%;
         margin-bottom: 16px;
     }
     p{
@@ -34,6 +35,7 @@ export const Destaques = styled.div<BannerType>`
         margin-bottom:10px;
     }
 `
+/*
 export const Gradient = styled.div`
     background-image: linear-gradient(to top, #111, transparent);
     position: absolute;
@@ -46,3 +48,4 @@ export const Gradient = styled.div`
         height: 100%;
     }
 `
+*/

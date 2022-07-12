@@ -44,11 +44,13 @@ export const MemberArea = () => {
                         <button>Mais informações</button>
                     </div>
                 </div>
-                <C.Gradient></C.Gradient>
+                
             </C.Destaques>
-            {list.map((item, key) => (
-                <MovieList key={key} title={item.title} items={item.items}/>
-            ))}
+            <div>
+                {list.map((item, key) => (
+                    <MovieList key={key} title={item.title} items={item.items}/>
+                ))}
+            </div>
         </C.Container>
     )
 }
