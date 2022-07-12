@@ -36,9 +36,15 @@ export const MemberArea = () => {
     return(
         <C.Container>
             <C.Destaques banner={banner}>
-                <h1>{title}</h1>
-                <p>{about}</p>
-                    <C.Gradient></C.Gradient>
+                <div className="infoMovie">
+                    <h1>{title}</h1>
+                    <p>{about}</p>
+                    <div>
+                        <button>Assistir</button>
+                        <button>Mais informações</button>
+                    </div>
+                </div>
+                <C.Gradient></C.Gradient>
             </C.Destaques>
             {list.map((item, key) => (
                 <MovieList key={key} title={item.title} items={item.items}/>

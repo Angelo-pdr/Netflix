@@ -13,7 +13,26 @@ export const Destaques = styled.div<BannerType>`
     background-position: 'center';
     background-image: url(${props => props.banner});
     position: relative;
+    display:flex;
+    align-items: center;
 
+    .infoMovie{
+        max-with: 30vh;
+        margin-left:80px;
+        z-index: 1;
+    }
+    h1{
+        font-size: 50px;
+        margin-bottom: 16px;
+    }
+    p{
+        max-width:40%;
+        text-align: justify;
+        font-size: 1.2w;
+        font-weight: 400;
+        text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+        margin-bottom:10px;
+    }
 `
 export const Gradient = styled.div`
     background-image: linear-gradient(to top, #111, transparent);
