@@ -40,11 +40,11 @@ export const MemberArea = () => {
                     <h1>{title}</h1>
                     <p>{about}</p>
                     <div>
-                        <button>Assistir</button>
-                        <button>Mais informações</button>
+                        <C.Button className="buttonAssitir">Assistir</C.Button>
+                        <C.Button>Mais informações</C.Button>
                     </div>
                 </div>
-                
+                <C.Gradient></C.Gradient>
             </C.Destaques>
             <div>
                 {list.map((item, key) => (

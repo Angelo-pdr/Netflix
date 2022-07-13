@@ -4,7 +4,8 @@ export const Container = styled.div`
    display:block;
    width: 100%;
    padding: 30px 0px 0px 60px;
-   
+
+   position: relative;
    h1{
       font-size: 1rem;
       line-height: 1.25w;
