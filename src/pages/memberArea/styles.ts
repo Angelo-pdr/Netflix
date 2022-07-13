@@ -35,7 +35,7 @@ export const Destaques = styled.div<BannerType>`
         margin-bottom:10px;
     }
 `
-/*
+
 export const Gradient = styled.div`
     background-image: linear-gradient(to top, #111, transparent);
     position: absolute;
@@ -48,4 +48,3 @@ export const Gradient = styled.div`
         height: 100%;
     }
 `
-*/
