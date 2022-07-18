@@ -8,16 +8,17 @@ export const Container = styled.div`
 
 `
 
-export const Header = styled.div`
+export const Header = styled.div<{black: boolean}>`
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 50px;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     padding: 10px  60px;
-    background-color: transparent;
+    background: ${props => props.black ? 'black' : ' linear-gradient(to bottom, #111, transparent);'};
+    transition: all ease 0.5s;
 
     .logo{
         height: 20px;
@@ -25,6 +26,14 @@ export const Header = styled.div`
     }
 
     .users{
+        display: flex;
+        align-items: center;
+    }
+    .users p{
+        margin-left: 5px;
+    }
+
+    .usersImage{
         height: 30px;
         margin: 0 auto;
         border-radius: 4px;
@@ -33,6 +42,18 @@ export const Header = styled.div`
     div{
         display: flex;
     }
+    .icons{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+   .liIcons{
+    padding: 0 5px;
+   }
+   .arrow{
+    padding: 0;
+   }
 
     ul{
         display: flex;
@@ -44,10 +65,11 @@ export const Header = styled.div`
         padding: 0 10px;
         font-size: 14px;
         cursor: pointer;
+        transition: all ease 0.5s;
     }
 
     li:hover{
-
+        color:  #AEAEB2;
     }
 `
 

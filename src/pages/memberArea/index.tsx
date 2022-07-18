@@ -2,6 +2,8 @@ import * as C from "./styles"
 import tmdb from "../../tmdb"
 import { useEffect, useState } from "react"
 import {MovieList} from '../../components/movieList'
+import SearchIcon from '@mui/icons-material/Search';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 
 type Items = {
     slug: string
@@ -15,6 +17,8 @@ export const MemberArea = () => {
     const [banner, setBanner] = useState<string>(``)
     const [title, setTitle] = useState<string>(``)
     const [about, setAbout] = useState<String>(``)
+    const [blackHeader, setBlackHeader] = useState<boolean>(false)
+
     useEffect(() => {
         const loadAll = async () => {
             const list = await tmdb.getMemberlist()
@@ -29,13 +33,23 @@ export const MemberArea = () => {
             setAbout(`${chosen.overview}`)
             console.log(chosen)
         }
-
+        
+        const scrollListener = () => {
+            if( window.scrollY > 10){
+                setBlackHeader(true)
+            }
+            else{
+                setBlackHeader(false)
+            }
+        }
+        
+        window.addEventListener('scroll', scrollListener)
         loadAll()
     }, [])
 
     return(
         <C.Container>
-            <C.Header>
+            <C.Header black={blackHeader}>
                 <div>
                     <img src="../src/img/netflix.svg" alt="logo" className="logo" />
                     <ul>
@@ -47,10 +61,12 @@ export const MemberArea = () => {
                     </ul>
                 </div>
                 <div>
-                    <ul>
-                        <li>
-                        <img src="../src/img/usuario.png" alt="perfil de usuario" className="users" />
-                        </li>
+                    <ul className="icons">
+                        <li className="liIcons"><SearchIcon/></li>
+                        <li className="liIcons">infantil</li>
+                        <li className="liIcons"><NotificationsIcon/></li>
+                        <li className="users"><img src="../src/img/usuario.png" alt="perfil de usuario" className="usersImage" /></li>
+                        <li className="arrow">▼</li>
                     </ul>
                 </div>
             </C.Header>
@@ -59,8 +75,8 @@ export const MemberArea = () => {
                     <h1>{title}</h1>
                     <p>{about}</p>
                     <div>
-                        <C.Button className="buttonAssitir">Assistir</C.Button>
-                        <C.Button>Mais informações</C.Button>
+                        <C.Button className="buttonAssitir">► Assistir</C.Button>
+                        <C.Button>+ Mais informações</C.Button>
                     </div>
                 </div>
                 <C.Gradient></C.Gradient>
