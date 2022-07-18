@@ -35,6 +35,25 @@ export const MemberArea = () => {
 
     return(
         <C.Container>
+            <C.Header>
+                <div>
+                    <img src="../src/img/netflix.svg" alt="logo" className="logo" />
+                    <ul>
+                        <li>Início</li>
+                        <li>Séries</li>
+                        <li>Filmes</li>
+                        <li>Bombando</li>
+                        <li>Minha lista</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                        <img src="../src/img/usuario.png" alt="perfil de usuario" className="users" />
+                        </li>
+                    </ul>
+                </div>
+            </C.Header>
             <C.Destaques banner={banner}>
                 <div className="infoMovie">
                     <h1>{title}</h1>

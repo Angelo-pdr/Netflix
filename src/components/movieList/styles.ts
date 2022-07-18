@@ -21,13 +21,10 @@ export const Container = styled.div`
    
    .movies{
       display: block;
-      width: 200px;
-      cursor: pointer;
+      height: 150px;
       margin-right: 5px;
+      cursor: pointer;
       border-radius: 2px;
-   }
-
-   .movies:hover{
-      transform: scale(1)
+      transition: all ease 0.2s;
    }
 `

@@ -8,6 +8,49 @@ export const Container = styled.div`
 
 `
 
+export const Header = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    padding: 10px  60px;
+    background-color: transparent;
+
+    .logo{
+        height: 20px;
+        margin: 0 auto;
+    }
+
+    .users{
+        height: 30px;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+
+    div{
+        display: flex;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        margin-left: 20px;
+    }
+
+    li{
+        padding: 0 10px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    li:hover{
+
+    }
+`
+
 export const Destaques = styled.div<BannerType>`
     height: 650px;
     background-size: cover;
@@ -34,7 +77,7 @@ export const Destaques = styled.div<BannerType>`
 
     p{
         max-width:40%;
-        text-align: justify;
+        
         font-size: 1.2w;
         font-weight: 400;
         text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
