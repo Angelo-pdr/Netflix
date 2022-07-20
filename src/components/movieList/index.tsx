@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react"
+
 import * as C from "./styles"
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 type Props ={
     title: string,
@@ -12,6 +14,8 @@ export const MovieList = ({title, items, key}:Props) => {
     return(
         <C.Container key={key}>
             <h1>{title}</h1>
+            <div className="seta"><NavigateBeforeIcon style={{fontSize: 50}}/></div>
+            <div className="seta"><NavigateNextIcon style={{fontSize: 50}}/></div>
             <section>
                 {items.results.length > 0 && items.results.map((item: any, key: any) => (
                     <div key={key}>
@@ -20,6 +24,7 @@ export const MovieList = ({title, items, key}:Props) => {
                     </div>
                 ))}
             </section>
+            
         </C.Container>  
     )
 }

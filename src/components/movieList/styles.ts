@@ -16,9 +16,17 @@ export const Container = styled.div`
    section{
       display: flex;
       overflow-x: hidden;
-    
+      
    }
-   
+   .seta{
+      position: absolute;
+      width: 40px;
+      height: 150px;
+      background-color: #ff0000;
+      display: flex;
+      align-items: center;
+   }
+
    .movies{
       display: block;
       height: 150px;

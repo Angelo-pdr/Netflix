@@ -5,7 +5,6 @@ type BannerType = {
 export const Container = styled.div`
     background-color: black;
     padding-bottom: 50px;
-
 `
 
 export const Header = styled.div<{black: boolean}>`
