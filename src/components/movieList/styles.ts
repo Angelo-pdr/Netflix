@@ -18,13 +18,33 @@ export const Container = styled.div`
       overflow-x: hidden;
       
    }
-   .seta{
+
+   .rightArrow, .leftArrow{
       position: absolute;
       width: 40px;
       height: 150px;
-      background-color: #ff0000;
+      background-color: rgba( 0, 0, 0, 0.6);
       display: flex;
       align-items: center;
+      justify-content: center;
+      z-index: 99;
+      cursor: pointer;
+      overflow: hidden;
+      opacity: 0;
+      transition: all ease  0.6s;
+   }
+
+   &:hover .rightArrow,
+   &:hover .leftArrow{
+      opacity: 1;
+   }
+
+   .leftArrow{
+      left: 0;
+   }
+
+   .rightArrow{
+      right: 0;
    }
 
    .movies{

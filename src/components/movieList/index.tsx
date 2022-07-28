@@ -14,8 +14,8 @@ export const MovieList = ({title, items, key}:Props) => {
     return(
         <C.Container key={key}>
             <h1>{title}</h1>
-            <div className="seta"><NavigateBeforeIcon style={{fontSize: 50}}/></div>
-            <div className="seta"><NavigateNextIcon style={{fontSize: 50}}/></div>
+            <div className="leftArrow"><NavigateBeforeIcon style={{fontSize: 50}}/></div>
+            <div className="rightArrow"><NavigateNextIcon style={{fontSize: 50}}/></div>
             <section>
                 {items.results.length > 0 && items.results.map((item: any, key: any) => (
                     <div key={key}>
