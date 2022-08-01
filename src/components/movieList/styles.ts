@@ -4,8 +4,8 @@ export const Container = styled.div`
    display:block;
    width: 100%;
    padding: 30px 0px 0px 60px;
-
    position: relative;
+   overflow: hidden;
    h1{
       font-size: 1rem;
       line-height: 1.25w;
@@ -15,8 +15,8 @@ export const Container = styled.div`
 
    section{
       display: flex;
-      overflow-x: hidden;
-      
+      width: 100%;
+      transition: all ease  0.5s;
    }
 
    .rightArrow, .leftArrow{
