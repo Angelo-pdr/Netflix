@@ -6,12 +6,12 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 type Props ={
     title: string,
     items: any
-    key: number
 }
 
-export const MovieList = ({title, items, key}:Props) => {
+export const MovieList = ({title, items}:Props) => {
 
     const [scrollX, setScrollX] = useState<number>(0)
+    const [limit, setLimit] = useState(false)
 
     const handleLeftArrow = () => {
         let x = scrollX + Math.round( window.innerWidth / 2);
@@ -19,31 +19,33 @@ export const MovieList = ({title, items, key}:Props) => {
         
         if(x > 0){
             x = 0
-            return setScrollX(x)
+            setScrollX(x)
+            return setLimit(true)
         }
     }
 
     const handleRightArrow = () => {
         let x = scrollX - Math.round( window.innerWidth / 2);
-        let listW = items.results.length * 150
+        let listW = items.results.length * 270
         setScrollX(x)
         if((window.innerWidth - listW) > x){
-            x = (window.innerWidth - listW) - 65
-            return setScrollX(x)
+            x = (window.innerWidth - listW) - 105
+            setScrollX(x)
+            return setLimit(true)
         }
 
     }
 
     return(
-        <C.Container key={key}>
+        <C.Container>
             <h1>{title}</h1>
-            <div className="leftArrow" onClick={handleLeftArrow}>
+            <div className="leftArrow" limit={limit} onClick={handleLeftArrow} >
                 <NavigateBeforeIcon style={{fontSize: 50}}/>
             </div>
             <div className="rightArrow" onClick={handleRightArrow}>
                 <NavigateNextIcon style={{fontSize: 50}}/>
             </div>
-            <section style={{ marginLeft: scrollX, width: items.results.length * 150}}>
+            <section style={{ marginLeft: scrollX, width: items.results.length * 200}}>
                 {items.results.length > 0 && items.results.map((item: any, key: any) => (
                     <div key={key}>
                         <img src={`https://image.tmdb.org/t/p/w300${item.backdrop_path}`} 

@@ -24,7 +24,6 @@ export const MemberArea = () => {
             const list = await tmdb.getMemberlist()
             setList(list)
             let originals = list.filter(item => item.slug === 'originals')    
-            console.log(originals[0].items)
             let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1))
             let chosen = originals[0].items.results[randomChosen]
             

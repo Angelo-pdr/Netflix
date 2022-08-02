@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div<{limit:boolean}>`
    display:block;
    width: 100%;
    padding: 30px 0px 0px 60px;
@@ -15,7 +15,6 @@ export const Container = styled.div`
 
    section{
       display: flex;
-      width: 100%;
       transition: all ease  0.5s;
    }
 
@@ -41,6 +40,7 @@ export const Container = styled.div`
 
    .leftArrow{
       left: 0;
+      
    }
 
    .rightArrow{
