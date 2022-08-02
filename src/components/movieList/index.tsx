@@ -11,7 +11,8 @@ type Props ={
 export const MovieList = ({title, items}:Props) => {
 
     const [scrollX, setScrollX] = useState<number>(0)
-    const [limit, setLimit] = useState(false)
+    const [limitRight, setLimitRight] = useState<string>("flex")
+    const [limitLeft, setLimitLeft] = useState<string>("flex")
 
     const handleLeftArrow = () => {
         let x = scrollX + Math.round( window.innerWidth / 2);
@@ -20,7 +21,11 @@ export const MovieList = ({title, items}:Props) => {
         if(x > 0){
             x = 0
             setScrollX(x)
-            return setLimit(true)
+            if(limitLeft == "flex"){
+                setLimitLeft("none")
+            }else{
+                setLimitLeft("flex")
+            }
         }
     }
 
@@ -31,7 +36,11 @@ export const MovieList = ({title, items}:Props) => {
         if((window.innerWidth - listW) > x){
             x = (window.innerWidth - listW) - 105
             setScrollX(x)
-            return setLimit(true)
+            if(limitRight == "flex"){
+                setLimitRight("none")
+            }else{
+                setLimitRight("flex")
+            }
         }
 
     }
@@ -39,10 +48,10 @@ export const MovieList = ({title, items}:Props) => {
     return(
         <C.Container>
             <h1>{title}</h1>
-            <div className="leftArrow" limit={limit} onClick={handleLeftArrow} >
+            <div className="leftArrow" style={{display:limitLeft}} onClick={handleLeftArrow} >
                 <NavigateBeforeIcon style={{fontSize: 50}}/>
             </div>
-            <div className="rightArrow" onClick={handleRightArrow}>
+            <div className="rightArrow" style={{display:limitRight}} onClick={handleRightArrow}>
                 <NavigateNextIcon style={{fontSize: 50}}/>
             </div>
             <section style={{ marginLeft: scrollX, width: items.results.length * 200}}>

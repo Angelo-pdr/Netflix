@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div<{limit:boolean}>`
+export const Container = styled.div`
    display:block;
    width: 100%;
    padding: 30px 0px 0px 60px;
@@ -23,7 +23,6 @@ export const Container = styled.div<{limit:boolean}>`
       width: 40px;
       height: 150px;
       background-color: rgba( 0, 0, 0, 0.6);
-      display: flex;
       align-items: center;
       justify-content: center;
       z-index: 99;
@@ -37,10 +36,10 @@ export const Container = styled.div<{limit:boolean}>`
    &:hover .leftArrow{
       opacity: 1;
    }
+   
 
    .leftArrow{
       left: 0;
-      
    }
 
    .rightArrow{
