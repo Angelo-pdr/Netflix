@@ -24,7 +24,7 @@ export const MovieList = ({title, items}:Props) => {
 
     const handleRightArrow = () => {
         let x = scrollX - Math.round( window.innerWidth / 2);
-        let listW = items.results.length * 270
+        let listW = items.results.length * 150
         setScrollX(x)
 
         if((window.innerWidth - listW) > x  ){
@@ -43,10 +43,10 @@ export const MovieList = ({title, items}:Props) => {
             <div className="rightArrow" onClick={handleRightArrow}>
                 <NavigateNextIcon style={{fontSize: 50}}/>
             </div>
-            <section style={{ marginLeft: scrollX, width: items.results.length * 300}}>
+            <section style={{ marginLeft: scrollX, width: items.results.length *150}}>
                 {items.results.length > 0 && items.results.map((item: any, key: any) => (
                     <div key={key}>
-                        <img src={`https://image.tmdb.org/t/p/w300${item.backdrop_path}`} 
+                        <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} 
                          alt={item.name} className="movies"  />
                     </div>
                 ))}

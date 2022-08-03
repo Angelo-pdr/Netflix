@@ -26,7 +26,7 @@ export const MemberArea = () => {
             let originals = list.filter(item => item.slug === 'originals')    
             let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1))
             let chosen = originals[0].items.results[randomChosen]
-            
+
             setBanner(`https://image.tmdb.org/t/p/original${chosen.backdrop_path}`)
             setTitle(`${chosen.name}`)
             setAbout(`${chosen.overview}`)

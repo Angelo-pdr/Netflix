@@ -6,6 +6,7 @@ export const Container = styled.div`
    padding: 30px 0px 0px 60px;
    position: relative;
    overflow: hidden;
+
    h1{
       font-size: 1rem;
       line-height: 1.25w;
@@ -21,7 +22,7 @@ export const Container = styled.div`
    .rightArrow, .leftArrow{
       position: absolute;
       width: 40px;
-      height: 150px;
+      height: 100%;
       background-color: rgba( 0, 0, 0, 0.6);
       display: flex;
       align-items: center;
@@ -49,10 +50,21 @@ export const Container = styled.div`
 
    .movies{
       display: block;
-      height: 150px;
-      margin-right: 5px;
+      width: 100%;
+      height: 100%;
       cursor: pointer;
       border-radius: 2px;
+      transform: scale(0.9);
       transition: all ease 0.2s;
+   }
+   .movies:hover{
+      transform: scale(1);
+   }
+
+   @media (max-width: 760px){
+      .rightArrow, .leftArrow{
+         opacity: 1;
+      }
+      
    }
 `

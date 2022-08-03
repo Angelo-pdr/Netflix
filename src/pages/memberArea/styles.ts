@@ -14,9 +14,9 @@ export const Container = styled.div`
         right: 0;
         bottom: 0;
         z-index: 999;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `
 
