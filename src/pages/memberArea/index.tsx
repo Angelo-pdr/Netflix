@@ -84,6 +84,7 @@ export const MemberArea = () => {
                     <MovieList key={key} title={item.title} items={item.items}/>
                 ))}
             </div>
+            <img src="../src/img/netflix.svg" alt="" />
         </C.Container>
     )
 }
