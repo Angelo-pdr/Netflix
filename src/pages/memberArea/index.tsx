@@ -84,7 +84,9 @@ export const MemberArea = () => {
                     <MovieList key={key} title={item.title} items={item.items}/>
                 ))}
             </div>
-            <img src="../src/img/netflix.svg" alt="" />
+            {list.length <= 0 &&
+            <img src="../src/img/Netflix_LoadTime.gif" alt="loandig da netflix"  className="loandig"/>
+            }
         </C.Container>
     )
 }
