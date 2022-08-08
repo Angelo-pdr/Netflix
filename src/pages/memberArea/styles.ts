@@ -110,17 +110,38 @@ export const Destaques = styled.div<BannerType>`
     }
 
     p{
-        max-width:40%;
-        
+        max-width: 40%;
         font-size: 1.2w;
         font-weight: 400;
         text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
         margin-bottom:10px;
     }
+    
     .buttonAssitir{
         background-color: white;
         color: black;
     }
+
+    @media(max-width: 760px){
+        .infoMovie{
+            height: 90vh;
+            margin-left:0px;
+            z-index: 1;
+            
+        }
+    
+        p{
+            max-width: 40%;
+            font-size: 1.2w;
+            font-size: 1.2w;
+            font-weight: 400;
+            text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+            margin-bottom:10px;
+        }
+    
+    }
+
+   
 `
 
 export const Gradient = styled.div`
@@ -130,7 +151,7 @@ export const Gradient = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    @media(max-width: 415px) {
+    @media(max-width: 760px) {
         width: 100%;
         height: 100%;
     }
