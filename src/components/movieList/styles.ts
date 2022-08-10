@@ -62,6 +62,8 @@ export const Container = styled.div`
    }
 
    @media (max-width: 760px){
+
+      padding: 0 17px;
       .rightArrow, .leftArrow{
          opacity: 1;
       }

@@ -41,6 +41,7 @@ export const Header = styled.div<{black: boolean}>`
         display: flex;
         align-items: center;
     }
+
     .users p{
         margin-left: 5px;
     }
@@ -54,6 +55,7 @@ export const Header = styled.div<{black: boolean}>`
     div{
         display: flex;
     }
+
     .icons{
         display: flex;
         align-items: center;
@@ -61,11 +63,12 @@ export const Header = styled.div<{black: boolean}>`
     }
 
    .liIcons{
-    padding: 0 5px;
-   }
+        padding: 0 5px;
+    }
+
    .arrow{
-    padding: 0;
-   }
+        padding: 0;
+    }
 
     ul{
         display: flex;
@@ -82,6 +85,10 @@ export const Header = styled.div<{black: boolean}>`
 
     li:hover{
         color:  #AEAEB2;
+    }
+
+    @media(max-width: 760px){
+        padding: 0px 10px;
     }
 `
 
@@ -123,25 +130,35 @@ export const Destaques = styled.div<BannerType>`
     }
 
     @media(max-width: 760px){
+        height: 400px;
+        width: 100vw;
+        
+        background-position: 'center';
+        background-image: url(${props => props.banner});
+        position: relative;
+        display: flex;
+        margin-bottom: -60px;
+
         .infoMovie{
-            height: 90vh;
-            margin-left:0px;
+            max-with: 100vh;
+            margin-left:10px;
             z-index: 1;
-            
         }
-    
+        h1{
+            font-size: 20px;
+            width:100%;
+            margin: 0;
+            margin-bottom: 5px;
+        }
         p{
-            max-width: 40%;
-            font-size: 1.2w;
-            font-size: 1.2w;
+            max-width: 75%;
+            font-size: 10px;
             font-weight: 400;
             text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
             margin-bottom:10px;
         }
-    
+       
     }
-
-   
 `
 
 export const Gradient = styled.div`
@@ -168,5 +185,12 @@ export const Button = styled.button`
     cursor: pointer;
     align-items: center;
 
+    @media(max-width: 760px){
+        font-size: 10px;
+        padding: 2px  12px;
+        line-height: 1.4rem;
+        margin: 0;
+        margin-right:  5px;
+    }
     
 `
