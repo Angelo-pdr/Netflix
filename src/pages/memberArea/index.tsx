@@ -61,12 +61,12 @@ export const MemberArea = () => {
                     <img src="../src/img/netflix.svg" alt="logo" className="logo" />
                         <p className="mobileMenu" onClick={navBar}>Navega ▼</p>
                     <ul className={`${onNavBar}`}>
-                        <li>Início</li>
-                        <li>Séries</li>
-                        <li>Filmes</li>
-                        <li>Bombando</li>
-                        <li>Minha lista</li>
-                        <li>Navegar por idiomas</li>
+                        <li className="liNab">Início</li>
+                        <li className="liNab">Séries</li>
+                        <li className="liNab">Filmes</li>
+                        <li className="liNab">Bombando</li>
+                        <li className="liNab">Minha lista</li>
+                        <li className="liNab">Navegar por idiomas</li>
                     </ul>
                 </div>
                 <div>

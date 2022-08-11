@@ -109,6 +109,7 @@ export const Header = styled.div<{black: boolean}>`
             background-color: rgba(0,0,0,.9);
             border: 1px solid hsla(0,0%,100%,.15);
             opacity: 0;
+            transition:  transform all ease  0.6s
         }
 
         .titlesOpen{
@@ -122,7 +123,7 @@ export const Header = styled.div<{black: boolean}>`
             opacity: 1;
         }
 
-        .titlesOpen li{
+         .liNab{
             font-size: 13px;
             font-weight: 700;
             height: 50px;
