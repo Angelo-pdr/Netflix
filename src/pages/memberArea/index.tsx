@@ -18,6 +18,7 @@ export const MemberArea = () => {
     const [title, setTitle] = useState<string>(``)
     const [about, setAbout] = useState<String>(``)
     const [blackHeader, setBlackHeader] = useState<boolean>(false)
+    const [onNavBar, setOnNavBar] = useState("titlesClose")
 
     useEffect(() => {
         const loadAll = async () => {
@@ -45,13 +46,21 @@ export const MemberArea = () => {
         loadAll()
     }, [])
 
+    const navBar = () => {
+        if(onNavBar === "titlesClose"){
+            setOnNavBar("titlesOpen")
+        }else{
+            setOnNavBar("titlesClose")
+        }
+    }
+
     return(
         <C.Container>
             <C.Header black={blackHeader}>
                 <div>
                     <img src="../src/img/netflix.svg" alt="logo" className="logo" />
-                        <p className="mobileMenu">Navega ▼</p>
-                    <ul className="titles">
+                        <p className="mobileMenu" onClick={navBar}>Navega ▼</p>
+                    <ul className={`${onNavBar}`}>
                         <li>Início</li>
                         <li>Séries</li>
                         <li>Filmes</li>
