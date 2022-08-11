@@ -50,12 +50,14 @@ export const MemberArea = () => {
             <C.Header black={blackHeader}>
                 <div>
                     <img src="../src/img/netflix.svg" alt="logo" className="logo" />
-                    <ul>
+                        <p className="mobileMenu">Navega ▼</p>
+                    <ul className="titles">
                         <li>Início</li>
                         <li>Séries</li>
                         <li>Filmes</li>
                         <li>Bombando</li>
                         <li>Minha lista</li>
+                        <li>Navegar por idiomas</li>
                     </ul>
                 </div>
                 <div>

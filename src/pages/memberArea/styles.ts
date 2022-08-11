@@ -86,9 +86,37 @@ export const Header = styled.div<{black: boolean}>`
     li:hover{
         color:  #AEAEB2;
     }
-
+    .mobileMenu{
+        font-size: 14px;
+        margin-left: 20px;
+        display: none;
+    }
     @media(max-width: 760px){
         padding: 0px 10px;
+
+        .mobileMenu{
+            display:block;
+        }
+
+        .titles{
+            position: absolute;
+            top: 6vh;
+            left: -20px;
+            display: inline;
+            text-align: center;
+            background-color: rgba(0,0,0,.9);
+            border: 1px solid hsla(0,0%,100%,.15);
+        }
+
+        .titles li{
+            font-size: 13px;
+            font-weight: 700;
+            height: 50px;
+            width: 260px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 `
 
